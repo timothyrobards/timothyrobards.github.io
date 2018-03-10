@@ -1,0 +1,158 @@
+
+/* =================== BOOTSTRAP OVERRIDES =================== */
+
+.row-jumbotron {
+	height: 90vh;
+	min-height: 90vh;	
+	background: blue;
+}
+
+.row-jumbotron2 {
+	height: 90vh;
+	min-height: 90vh;	
+	background: blue;
+}
+
+.row-jumbotron2 p {
+	width: 50%;
+	margin: auto;
+	padding: auto;
+}
+
+.row-jumbotron img{
+	height: 90vh;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: -5px;
+}
+
+.row2 {
+	height: 100vh;
+	min-height: 100vh;
+	background: green;
+}
+
+.row2 img{
+	height: 100vh;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+}
+
+.row-full {
+	height:100vh;
+	min-height:100vh;	
+	background: red;
+}
+
+.btn {
+	border-radius: 0;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+.break {
+	display: block;
+}
+
+.card-img-top {
+	height: 65vh;
+}
+
+.card-body {
+	height: 170px;
+}
+
+.footer p{
+	width: 37%;
+}
+
+/* ====================== MEDIA QUERIES ====================== */
+
+/* Small to Medium Devices*/
+
+@media (max-width: 768px) {
+	
+	
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:0px;
+    padding-right:0px;
+    overflow-x: hidden;
+}
+
+.row2 p{
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.row2 h1 {
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.row3 p, h1, h5 {
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+.row3 h1{
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.row4 p {
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+
+.row-jumbotron2 p{
+	padding-left: 2.5rem !important;
+	padding-right: 2.5rem !important;
+	width: auto;
+}
+
+.btn {
+	font-size: 12px;
+}
+
+.btn2 {
+	margin-left: 5% !important;
+}
+
+	.row-jumbotron {	
+		background: url("assets/1.jpg");
+		background-size: cover;
+		color: #fff;
+	}
+
+	.row-jumbotron img{
+		display: none;
+	}
+	
+	.row2 {
+		height: auto;
+		min-height: auto;
+		padding-top: 10%;
+	}
+	.row2 img{
+		height: auto;
+		padding-top: auto;
+		padding-bottom: auto;
+	}
+	.row-full{
+		height: auto;
+		min-height: auto;
+	}	
+	.card-img-top {
+		height: auto;
+	}
+	.card-body {
+		height: auto;
+	}
+	.footer p{
+		width: 66%;
+}
