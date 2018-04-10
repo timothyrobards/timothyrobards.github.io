@@ -41,7 +41,7 @@ body p {
 }
 
 .navbar-nav a:hover span{
-	border-bottom: 3px solid #FFFF00;
+	border-bottom: 3px solid #FFC701;
 }
 
 .custom-toggler2.navbar-toggler {
@@ -82,7 +82,7 @@ body p {
 
 .overlay a:hover span {
     color: #000;
-    border-bottom: 4px solid #FFFF00;
+    border-bottom: 4px solid #FFC701;
 }
 
 .overlay .closebtn {
@@ -329,6 +329,10 @@ label {
 	line-height: 24px;
 }
 
+.welcomer1 h1 {
+	width: 80% !important;
+}
+
 .grey {
 	color: #898989;
 }
@@ -410,7 +414,7 @@ label {
 /* ====================== VILLAS PAGE ====================== */
 
 .welcomebg2 {	
-	background-image: url(assets/imgs/gsvillas/4.jpg);
+	background-image: url(assets/imgs/gsvillas/2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -500,20 +504,20 @@ html, body {
 }
 
 .galleryclosebtn a {
-    color: yellow;
+    color: #FFC701;
     text-decoration: none;
 }
 
 .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFC701' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
 }
 
 .carousel-control-next-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff0' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFC701' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
 .carousel-indicators .active{
-    background-color: #ff0;
+    background-color: #FFC701;
 }
 
 .copyright {
@@ -568,6 +572,7 @@ html, body {
 
 .button1 {
 	font-size: 14px !important;
+	margin-left: 50px !important;
 }
 
 /* Header */
@@ -754,6 +759,7 @@ html, body {
 	padding-left: 0rem !important;
 	padding-right: 0rem !important;
 	font-size: 30px; 
+	width: auto !important;
 }
 
 .welcomer1 p{
