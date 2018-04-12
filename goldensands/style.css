@@ -450,6 +450,20 @@ label {
 	color: #fff !important;
 }
 
+/* ====================== VILLAS PAGE ====================== */
+
+.welcomebg5 {	
+	background-image: url(assets/imgs/GoldenSands-ComingSoon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.welcomebg5 .navbar-nav a {
+	color: #fff !important;
+}
+
 /* ====================== GOOGLE MAP ====================== */
 
 
@@ -519,6 +533,18 @@ html, body {
 
 .copyright {
 	font-size: 12px;
+}
+
+.comingsoon {
+    font-size: 40px;
+    color: #fff;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
 }
 
 /* ====================== MEDIA QUERIES ====================== */
@@ -830,3 +856,6 @@ html, body {
 	padding-left: 0 !important;
 }
 
+.comingsoon {
+    font-size: 30px;
+}
