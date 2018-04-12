@@ -859,3 +859,7 @@ html, body {
 .comingsoon {
     font-size: 30px;
 }
+
+.leftmar {
+	margin-left: 20px !important;
+}
