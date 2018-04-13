@@ -249,8 +249,8 @@ body p {
 /* Footer */
 
 .footer {
-	background: rgb(236,0,64);
-	background: linear-gradient(171deg, rgba(236,0,64,1) 0%, rgba(255,0,0,1) 39%, rgba(255,98,0,1) 100%);
+	background: rgb(0,183,255);
+	background: linear-gradient(149deg, rgba(0,183,255,1) 0%, rgba(255,255,199,1) 100%);
 }
 
 .footer p{
@@ -265,7 +265,7 @@ body p {
 .formheader {
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
-	color: #FFC701;
+	color: #898989;
 }
 
 .form-group {
@@ -275,9 +275,21 @@ body p {
 }
 
 .form-control {
-	border-color: #FFC701 !important;
+	border-color: #898989 !important;
 	color: #898989 !important; 
 	font-size: 14px !important;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #C1C1C1 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #C1C1C1 !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #C1C1C1 !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #C1C1C1 !important;
 }
 
 .whitebox {
@@ -292,13 +304,17 @@ body p {
 	width: 60%;
 	background: #fff !important;
 	font-weight: bold;
-	color: #FFC701 !important;
+	color: #898989 !important;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
+.btn-send {
+	color: #898989 !important;
+}
+
 input[type = "submit"].widebtn:hover {
-    color: #FFC701 !important;
+    color: #898989 !important;
 }
 
 label {
@@ -402,6 +418,10 @@ label {
 	border-right: 100px solid #fff;
 	border-top: 20px solid #fff;
 	border-bottom: 40px solid #fff;
+}
+
+.holidays {
+	font-size: 30px !important;
 }
 
 .welcomer4 {
@@ -862,4 +882,8 @@ html, body {
 
 .leftmar {
 	margin-left: 20px;
+}
+
+.holidays {
+	font-size: 20px !important;
 }
