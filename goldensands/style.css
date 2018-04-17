@@ -178,16 +178,33 @@ body p {
 
 /* Row 4 */
 
+.card {
+	overflow: hidden !important;
+}
+
 .row4 img{
 	height: 100vh;
 	object-fit: cover;
-	width: 100%;
+	max-width: 100%;
+	transition: all 0.3s;
 }
 
 .row4 .bordered {
 	border: 1px solid #FFF;
-	background-color: white;
+	background:rgba(255,255,255, 0.85);
 }
+/*
+.card:hover {
+	outline: solid 10px #fff;
+	outline-offset: -10px;
+}*/
+
+.card img:hover {
+	-webkit-transform: scale(1.2);
+ 	transform: scale(1.1);
+ 	
+}
+
 
 .row4 .bordered h2{
 	font-weight: 600;
@@ -226,7 +243,11 @@ body p {
 	padding-right: 0 !important;
 }
 
-
+.boxfix {
+	font-size: 30px !important;
+	line-height: 0px !important;
+	padding-bottom: 0.5em !important;
+}
 
 /* apply to cards only
 .btn {
@@ -633,7 +654,7 @@ html, body {
 }
 
 .font30 {
-	font-size: 30px;
+	font-size: 30px !important;
 }
 
 .row-jumbotron {
@@ -700,6 +721,10 @@ html, body {
 	padding: 0 !important;
 }
 
+.nopadtop {
+    padding-top: 1.5em !important;
+}
+
 .row3 {
 	padding-top: 0 !important;
 }
@@ -735,7 +760,7 @@ html, body {
 /* Row 4 */
 
 .row4 img{
-	height: auto;
+	height: 450px;
 	object-fit: cover;
 	width: 100%;
 }
@@ -746,6 +771,16 @@ html, body {
 
 .mabai {
 	padding-right: 0 !important;
+}
+
+.row4 .bordered {
+	width: 90%;
+}
+
+.boxfix2 {
+	font-size: 30px !important;
+	line-height: 0px !important;
+	padding-bottom: 0.5em !important;
 }
 
 /* Footer */
