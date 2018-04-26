@@ -178,16 +178,33 @@ body p {
 
 /* Row 4 */
 
+.card {
+	overflow: hidden !important;
+}
+
 .row4 img{
 	height: 100vh;
 	object-fit: cover;
-	width: 100%;
+	max-width: 100%;
+	transition: all 0.3s;
 }
 
 .row4 .bordered {
 	border: 1px solid #FFF;
-	background-color: white;
+	background:rgba(255,255,255, 0.85);
 }
+/*
+.card:hover {
+	outline: solid 10px #fff;
+	outline-offset: -10px;
+}*/
+
+.card img:hover {
+	-webkit-transform: scale(1.2);
+ 	transform: scale(1.1);
+ 	
+}
+
 
 .row4 .bordered h2{
 	font-weight: 600;
@@ -226,7 +243,11 @@ body p {
 	padding-right: 0 !important;
 }
 
-
+.boxfix {
+	font-size: 30px !important;
+	line-height: 0px !important;
+	padding-bottom: 0.5em !important;
+}
 
 /* apply to cards only
 .btn {
@@ -249,8 +270,8 @@ body p {
 /* Footer */
 
 .footer {
-	background: rgb(236,0,64);
-	background: linear-gradient(171deg, rgba(236,0,64,1) 0%, rgba(255,0,0,1) 39%, rgba(255,98,0,1) 100%);
+	background: rgb(0,183,255);
+	background: linear-gradient(149deg, rgba(0,183,255,1) 0%, rgba(255,255,199,1) 100%);
 }
 
 .footer p{
@@ -265,7 +286,7 @@ body p {
 .formheader {
 	font-size: 20px;
 	font-family: 'Open Sans', sans-serif;
-	color: #FFC701;
+	color: #898989;
 }
 
 .form-group {
@@ -275,9 +296,21 @@ body p {
 }
 
 .form-control {
-	border-color: #FFC701 !important;
+	border-color: #898989 !important;
 	color: #898989 !important; 
 	font-size: 14px !important;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #C1C1C1 !important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #C1C1C1 !important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #C1C1C1 !important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #C1C1C1 !important;
 }
 
 .whitebox {
@@ -292,13 +325,17 @@ body p {
 	width: 60%;
 	background: #fff !important;
 	font-weight: bold;
-	color: #FFC701 !important;
+	color: #898989 !important;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
 
+.btn-send {
+	color: #898989 !important;
+}
+
 input[type = "submit"].widebtn:hover {
-    color: #FFC701 !important;
+    color: #898989 !important;
 }
 
 label {
@@ -340,17 +377,14 @@ label {
 	font-size: 10px !important;
 	color: #898989;
 }
-
+/*
 .buttonh {
 	height: 35px;
 	width: 150px;
 	margin-right: 10px;
 	margin-left: 10px;
-}
+}*/
 
-.buttonml {
-	margin-left: 0px;
-}
 .btn-outline-warning:hover, .btn-outline-warning:focus {
 	color: #FFF !important;
 }
@@ -407,6 +441,10 @@ label {
 	border-bottom: 40px solid #fff;
 }
 
+.holidays {
+	font-size: 30px !important;
+}
+
 .welcomer4 {
 	background: #F8F8F8;
 }
@@ -450,6 +488,20 @@ label {
 }
 
 .welcomebg4 .navbar-nav a {
+	color: #fff !important;
+}
+
+/* ====================== VILLAS PAGE ====================== */
+
+.welcomebg5 {	
+	background-image: url(assets/imgs/GoldenSands-ComingSoon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.welcomebg5 .navbar-nav a {
 	color: #fff !important;
 }
 
@@ -524,6 +576,18 @@ html, body {
 	font-size: 12px;
 }
 
+.comingsoon {
+    font-size: 40px;
+    color: #fff;
+    left: 0;
+    line-height: 200px;
+    margin: auto;
+    margin-top: -100px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
 /* ====================== MEDIA QUERIES ====================== */
 
 /* Medium to Large Devices*/
@@ -590,7 +654,7 @@ html, body {
 }
 
 .font30 {
-	font-size: 30px;
+	font-size: 30px !important;
 }
 
 .row-jumbotron {
@@ -657,6 +721,10 @@ html, body {
 	padding: 0 !important;
 }
 
+.nopadtop {
+    padding-top: 1.5em !important;
+}
+
 .row3 {
 	padding-top: 0 !important;
 }
@@ -692,7 +760,7 @@ html, body {
 /* Row 4 */
 
 .row4 img{
-	height: auto;
+	height: 450px;
 	object-fit: cover;
 	width: 100%;
 }
@@ -703,6 +771,16 @@ html, body {
 
 .mabai {
 	padding-right: 0 !important;
+}
+
+.row4 .bordered {
+	width: 90%;
+}
+
+.boxfix2 {
+	font-size: 30px !important;
+	line-height: 0px !important;
+	padding-bottom: 0.5em !important;
 }
 
 /* Footer */
@@ -767,18 +845,18 @@ html, body {
 	padding-right: .5rem !important;
 	font-size: 14px !important;
 }
-
+/*
 .buttonh {
 	height: auto;
 	width: 125px;
 	margin-right: 0px;
 	margin-left: 10px;
-}
+}*/
 
-.buttonml {
+/*.buttonml {
 	margin-left: auto;
 	margin-right: 10px;
-}
+}*/
 
 .welcomer2 {
 	padding-bottom: 5em;
@@ -833,3 +911,14 @@ html, body {
 	padding-left: 0 !important;
 }
 
+.comingsoon {
+    font-size: 30px;
+}
+
+.leftmar {
+	margin-left: 20px;
+}
+
+.holidays {
+	font-size: 20px !important;
+}
