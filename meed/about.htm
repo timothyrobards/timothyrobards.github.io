@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MEED.</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script>
+	function openNav() {
+	document.getElementById("myNav").style.width = "100%";
+	}
+
+	function closeNav() {
+	document.getElementById("myNav").style.width = "0%";
+	}
+	</script>
+</head>
+<body>
+	<div id="logo-img"><img src="nike.png" height="50px" /></div>
+	<nav class="nav">
+		  <div id="myNav" class="overlay">
+		    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		    <div class="overlay-content">
+		      <a href="#">About</a>
+		      <a href="#">Info</a>
+		      <a href="#">Services</a>
+		      <a href="#">Why Meed?</a>
+		      <a href="#">FAQ</a>
+		      <a href="#">Contact Us</a>
+		    </div>
+		  </div>
+		  <span id="burger" onclick="openNav()">&#9776;</span>
+	</nav>
+	<section id="desktop-nav">
+		<ul>
+		  <li><a href="#" class="ghost-button">Contact Us</a></li>
+		  <li><a href="#faq">FAQ</a></li>
+		  <li><a href="#why">Why Meed?</a></li>
+		  <li><a href="#services">Services</a></li>
+		  <li><a href="#info">Info</a></li>
+		  <li><a href="#about">About</a></li>
+		</ul>
+	</section>
+
+
+	<section id="about">ABOUT</section>
+
+</body>
+</html>
