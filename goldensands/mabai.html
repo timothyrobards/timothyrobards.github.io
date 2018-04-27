@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans" rel="stylesheet"> 
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Smooth Scroll -->
+    <script src="assets/js/smoothscroll.js"></script>
+
+    <title>Golden Sands Mabai Complex</title>
+  </head>
+  <body>
+ 
+ <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-md navbar-dark welcomebg4 align-items-start">
+    <a class="navbar-brand" href="index.html">
+      <img class="logo" src="assets/imgs/golden-sands-logo.png" alt="Golden Sands Goa">
+    </a>
+
+    <span class="nav-icon" onclick="openNav()">&#9776;</span>
+
+      <script>
+      function openNav() {
+      document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+      document.getElementById("myNav").style.width = "0%";
+      }
+      </script>
+
+    </div>
+    
+    <div class="collapse navbar-collapse flex-row-reverse mt-3">
+      <div class="navbar-nav small">
+        <a class="nav-item nav-link px-4" href="index.html"><span>Home</span></a>
+        <a class="nav-item nav-link px-4" href="index.html#whoweare"><span>Who We Are</span></a>
+        <a class="nav-item nav-link px-4" href="index.html#ourphilosophy"><span>Our Philosophy</span></a>
+        <a class="nav-item nav-link px-4" href="index.html#whatwebuild"><span>The Properties</span></a>
+        <a class="nav-item nav-link px-4 mr-5" href="inthemaking.html"><span>In The Making</span></a>
+      </div>
+    </div>
+  </nav>
+
+    <div class="showarrow">
+      <a href="mabaigallery.html"><img class="rightarrow" src="assets/imgs/Arrow-Light.png" alt="Image Gallery" onmouseover="this.src='assets/imgs/Path 235@2x.png'" onmouseout="this.src='assets/imgs/Arrow-Light.png'" /></a>
+    </div>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html"><span>Home</span></a>
+        <a href="index.html#whoweare"><span>Who We Are</span></a>
+        <a href="index.html#ourphilosophy"><span>Our Philosophy</span></a>
+        <a href="index.html#whatwebuild"><span>The Properties</span></a>
+        <a href="inthemaking.html"><span>In The Making</span></a>
+      </div>
+    </div>
+
+
+  <!-- Main Content -->
+
+  <div class="container-fluid">
+  
+  
+    <div class="row justify-items-center pt-4 pb-5 welcomer1">
+      <div class="col-xs-12 col-md-6">
+        <h1 class="pt-4">Truly extraordinary work spaces</h1>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <p class="pt-4 pb-2 mb-4 pr-3">This commercial project encompasses 42 breath-taking offices located in the rich heritage
+        centre of Margao city. This exquisite group of offices reflect traditional Goan-Portuguese architecture with commercial functionality. The open-air design ensures that the work environment is both comfortable and professional. The stunning landscapes connect you with nature, making your work place feel more like a holiday.</p>
+        <p class="pb-2">Prices are available on request and lease rental options are available on an annual basis or longer. Please see Sales and Rentals to inquire.</p>
+        <a class="btn btn-warning btn-sm font-weight-bold text-white px-4 py-2 shrinkbtn buttonh buttonml" href="mabai.html#contactform" role="button">SALES AND RENTALS</a>
+        <a class="btn btn-outline-warning btn-sm font-weight-bold text-yellow px-4 py-2 shrinkbtn leftmar buttonh" href="mabaigallery.html" role="button">VIEW MORE PHOTOS</a>
+      </div>
+    </div>
+
+  
+  <div id="map"></div>
+  
+  <section id="contactform">
+  <div class="row">
+  <div class="col-xs-12 col-md-12 text-center pb-5 pt-5 text-white footer">
+    <h1 >Live the <span class="font-italic">Golden</span> life</h1>
+    <p class="m-auto pt-3 pb-4 line24"> Offering exclusive lifestyle at an extraordinary location. For all inquiries please contact us at <a href="mailto:goldensands.admin@gmail.com" class="font-weight-bold">goldensands.admin@gmail.com</a></p>
+  
+
+  <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+    
+    <div class="controls">
+      <div class="whitebox">
+      <div class="form-group">
+          <span class="form-text formheader font-weight-bold pt-3 pb-3">Leasing Inquiry</span>
+          <label></label>
+          <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="* Your name is required.">
+          <div class="help-block with-errors"></div>
+      </div>
+            
+      <div class="form-group">
+          <label></label>
+          <input id="form_email" type="email" name="email" class="form-control" placeholder="Email" required="required" data-error="* A valid email is required.">
+          <div class="help-block with-errors"></div>
+      </div>
+        
+      <div class="form-group">
+          <label></label>
+          <textarea id="form_message" name="message" class="form-control" placeholder="Leasing Information" rows="4" required="required" data-error="* Please, leave us a message."></textarea>
+          <div class="help-block with-errors"></div>
+          <span id="bookinginfoHelpBlock" class="form-text pt-3 pb-5">Please specify room name, dates and any other information necessary to complete your booking.</span>
+      </div>
+      </div>
+
+      <input type="submit" class="btn btn-send widebtn mt-2" value="SEND">
+        
+      <div class="pt-4"><span class="copyright">Copyright &copy; 2018 GoldenSands. All Rights Reserved.</span></div>
+          
+  </div>
+  </div>
+
+  </form>
+  </div>
+  </div>
+  </section>
+
+  </div>
+
+    <!-- JavaScript -->
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS-9E4XNV45Pzn9dilyfro284bw-AYYOQ&callback=initMap&v=3"></script>
+    <script src="assets/js/custom4.js"></script>
+    <script src="assets/js/validator.js"></script>
+    <script src="assets/js/contact.js"></script>
+
+  </body>
+
+</html>
