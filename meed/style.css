@@ -1106,7 +1106,7 @@ footer a {
 
 /* Mobile & Below */
 
-@media only screen and (max-width: 520px) {
+@media screen and (max-width: 520px) {
 	
   .container {
     -ms-grid-rows: 15vh auto auto auto auto auto 100vh;
