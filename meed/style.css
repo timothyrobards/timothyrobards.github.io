@@ -356,7 +356,7 @@ header h1 {
 	line-height: 130px;
 	font-weight: 800;
 	text-decoration: underline;
-	color: #EE3124;
+	color: #FDF4EC;
 	text-align: right;
 	padding-right: 1em;
 	height: 100%;
@@ -464,7 +464,7 @@ header h1 {
 
 .background_box{
     position: absolute;
-	background-color: pink; /*#FDF4EC*/
+	background-color: #FDF4EC;
 	height: 75vh;
 	width: 40vw;
 	margin-left: auto;
@@ -495,7 +495,7 @@ header h1 {
           "whatwedo whatwedo"
           "offerings caption";
 
-    background-color: pink;
+    background-color: #FDF4EC;
     text-align: center;
     height: 100%;
     font-family: "soleil",sans-serif;
