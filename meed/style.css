@@ -138,7 +138,7 @@ nav li a:hover span{
     z-index: 2;
     top: 0;
     left: 0;
-	background-color: #fdf4ec;
+	background-color: #fff;
     overflow-x: hidden;
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
