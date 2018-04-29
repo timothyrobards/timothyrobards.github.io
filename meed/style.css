@@ -102,7 +102,7 @@ nav ul {
 nav li {
   display: inline-block;
   font-family: "soleil",sans-serif; 
-  font-size: 20px;
+  font-size: 1.250em;
 }
 
 nav li a {
@@ -159,7 +159,7 @@ nav li a:hover span{
     padding: 8px;
     text-decoration: none;
     font-family: "soleil",sans-serif; 
-    font-size: 36px;
+    font-size: 2.250em;
     color: #ee3124;
     display: block;
     -webkit-transition: 0.3s;
@@ -176,12 +176,12 @@ nav li a:hover span{
     position: absolute;
     top: -0.2em;
     right: 0.2em;
-    font-size: 60px;
+    font-size: 3.750em;
     text-decoration: none !important;
 }
 
 #burger {
-	font-size: 31px;
+	font-size: 1.938em;
 	cursor: pointer;
 	color: #ee3124;
 	margin-left: auto;
@@ -216,6 +216,7 @@ nav li a:hover span{
   font-weight: normal;
   text-decoration: none;
   font-family: "soleil",sans-serif; 
+  margin-top: 0.5em;
 }
 
 .ghost-button2:hover, .ghost-button2:active {
@@ -244,7 +245,7 @@ header h1 {
 	padding-top: 7%;	
 	position: absolute;
 	z-index: 1;
-	font-size: 36px;
+	font-size: 2.250em;
 	font-family: "soleil",sans-serif; 
 	line-height: 62px;
 }
@@ -262,8 +263,8 @@ header h1 {
 
 #arrow {
 	position: absolute;
-	margin-right: auto;
-	margin-top: 30%;
+	left: 0;
+	margin-top: 25em;
 	margin-left: -5px;
 	width: 100%;
 }
@@ -352,7 +353,7 @@ header h1 {
 	-ms-grid-column: 2;
 	grid-area: abouth1;
 	font-family: "soleil",sans-serif;
-	font-size: 105px;
+	font-size: 6.563em;
 	line-height: 130px;
 	font-weight: 800;
 	text-decoration: underline;
@@ -369,7 +370,7 @@ header h1 {
 	-ms-grid-column: 1;
 	grid-area: aboutp1;
 	font-family: "soleil",sans-serif;
-	font-size: 20px;
+	font-size: 1.250em;
 	font-weight: 200;
 	line-height: 34px;
 	color: #575757;
@@ -383,7 +384,7 @@ header h1 {
 	-ms-grid-column: 1;
 	grid-area: aboutp2;
 	font-family: "soleil",sans-serif;
-	font-size: 20px;
+	font-size: 1.250em;
 	font-weight: 200;
 	line-height: 34px;
 	color: #575757;
@@ -397,7 +398,7 @@ header h1 {
 	-ms-grid-column-span: 2;
 	grid-area: aboutp3;
 	font-family: "soleil",sans-serif;
-	font-size: 20px;
+	font-size: 1.250em;
 	font-weight: 200;
 	line-height: 34px;
 	color: #575757;
@@ -412,7 +413,7 @@ header h1 {
 	-ms-grid-column-span: 2;
 	grid-area: aboutp4;
 	font-family: "soleil",sans-serif;
-	font-size: 20px;
+	font-size: 1.250em;
 	font-weight: 200;
 	line-height: 34px;
 	color: #575757;
@@ -440,7 +441,7 @@ header h1 {
 	font-family: "soleil",sans-serif;
 	color: #575757;
 	width: 40vw;
-	font-size: 24px;
+	font-size: 1.500em;
 	line-height: 34px;
 	font-weight: 300;
 	padding-bottom: 1em;
@@ -451,7 +452,7 @@ header h1 {
 	font-family: "soleil",sans-serif;
 	position: absolute;
 	right: 25%;
-	font-size: 50px;
+	font-size: 3.125em;
 }
 
 #info_h2_mobile {
@@ -512,25 +513,25 @@ header h1 {
 }
 
 .whatwedo h1 {
-	font-size: 46px;
+	font-size: 2.875em;
 	font-weight: 800;
 	color: #ee3124;
-	padding-top: 5%;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .whatwedo p {
-	font-size: 24px;
+	font-size: 1.500em;
 	line-height: 37px;
 	color: #ee3124;
 	width: 60%;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding-bottom: 80px;
 	margin: 0 auto;
 	text-align: left;
 }
 
 .whitebox ol {
-	font-size: 20px;
+	font-size: 1.250em;
 	text-align: left;
 	font-weight: 100;
 	width: 80%;
@@ -584,7 +585,7 @@ header h1 {
 
 .offerings h2 {
 	position: relative;
-	font-size: 34px;
+	font-size: 2.125em;
 	font-weight: 800;
 	color: #ee3124;
 	padding-top: 12%;
@@ -592,20 +593,24 @@ header h1 {
 
 }
 
-.offerings ul {
+.offerings ol {
 	position: relative;
-	font-size: 18px;
+	font-size: 1.125em;
 	text-align: left;
 	font-weight: 100;
 	width: 80%;
-	padding-top: 5%;
-	padding-bottom: 10%;
+	padding-top: 10%;
+	padding-bottom: 5%;
 	margin: 0 auto;
 	line-height: 50px;
 	list-style-type: none;	
 }
 
-.offerings ul > li:before {
+.offerings li {
+	padding-bottom: 10px;
+}
+
+.offerings ol > li:before {
     content: '\2014'; /* en dash */
     position: absolute;
     margin-left: -1.1em; 
@@ -618,7 +623,7 @@ header h1 {
 }
 
 .caption p{
-	font-size: 24px;
+	font-size: 1.500em;
 	line-height: 37px;
 	position: relative;
 	color: #ee3124;
@@ -692,9 +697,28 @@ label {
 #toggle3:checked ~ #content3,
 #toggle4:checked ~ #content4,
 #toggle5:checked ~ #content5 {
-  height: 300px;
   padding-top: 2vh;
   padding-right: 4vw;
+}
+
+#toggle1:checked ~ #content1 {
+  height: 200px;
+}
+
+#toggle2:checked ~ #content2 {
+  height: 100px;
+}
+
+#toggle3:checked ~ #content3 {
+  height: 200px;
+}
+
+#toggle4:checked ~ #content4 {
+  height: 350px;
+}
+
+#toggle5:checked ~ #content5 {
+  height: 200px;
 }
 
 #faqs p {
@@ -726,7 +750,7 @@ footer {
 }
 
 footer h2 {
-	font-size: 46px;
+	font-size: 2.875em;
 	font-weight: 800;
 	color: #fff;
 	padding-top: 7%;
@@ -740,7 +764,7 @@ footer h2 span {
 }
 
 footer p {
-	font-size: 24px;
+	font-size: 1.500em;
 	font-weight: 200;
 	color: #fff;
 	text-align: left;
@@ -752,7 +776,7 @@ footer p {
 }
 
 footer h3 {
-	font-size: 46px;
+	font-size: 2.875em;
 	font-weight: 800;
 	color: #fff;
 	margin-left: 10%;
@@ -796,14 +820,14 @@ footer a {
   }
   
   .ghost-button {
-    font-size: 14px;  
+    font-size: 0.875em;  
     position: absolute;
     padding: 0.5em 1.5em;
 	right: 4.5em; 
   }
 
   .ghost-button2 {
-    font-size: 14px;  
+    font-size: 0.875em;  
  	padding: 0;
   }
 
@@ -816,7 +840,7 @@ footer a {
   }
 
   header h1{
-	font-size: 20px;
+	font-size: 1.250em;
 	width: 15em;
 	line-height: 34px;
 	padding-top: 7%;	
@@ -843,7 +867,7 @@ footer a {
   }
 
   .abouth1 {
-   	font-size: 62px;
+   	font-size: 3.875em;
    	line-height: 70px;
    	font-weight: 600;
    	text-align: center;
@@ -858,21 +882,21 @@ footer a {
    }
  
   .aboutp1 {
-   	font-size: 16px;
+   	font-size: 1em;
    	line-height: 20px;
    	width: 80%;
    	padding-bottom: 1em;
   }
  
   .aboutp2 {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 20px;
 	width: 80%;
 	padding-bottom: 1em;
   }
 
   .aboutp3 {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 20px;
     margin: 0 auto;
 	width: 80%;
@@ -880,7 +904,7 @@ footer a {
   }
 
   .aboutp4 {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 20px;
     margin: 0 auto;
 	width: 80%;
@@ -893,7 +917,7 @@ footer a {
   }
 
   #info p {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 20px;
 	position: relative;
 	padding-bottom: 20px;
@@ -914,7 +938,7 @@ footer a {
 	color: red;
 	position: absolute;
 	right: 25%;
-	font-size: 20px; 
+	font-size: 1.250em; 
 	margin-top: -9em;
   }
 
@@ -939,28 +963,28 @@ footer a {
   }
 
 .whatwedo {
-  	margin-bottom: 1em;
+  	margin-bottom: 0em;
 }
 
 .whatwedo h1 {
-	font-size: 20px;
+	font-size: 1.250em;
 	font-weight: 800;
-	padding-top: 10vh;
+	padding-top: 50px;
+	padding-bottom: 50px;
 }
 
 .whatwedo p {
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: 200;
 	line-height: 20px;
 	width: 70%;
-	padding-top: 5vh;
 	text-align: left;
-	padding-bottom: 8vh;
+	padding-bottom: 50px;
 	margin: 0 auto;
 }
 
 .whitebox ol {
-	font-size: 14px;
+	font-size: 0.875em;
 	text-align: left;
 	font-weight: 100;
 	width: 80%;
@@ -1010,7 +1034,7 @@ footer a {
 }
 
 .offerings h2 {
-	font-size: 20px;
+	font-size: 1.250em;
 	font-weight: 800;	
 	left: 50%;
 	-webkit-transform: translateX(-50%);
@@ -1018,8 +1042,8 @@ footer a {
 	    transform: translateX(-50%);
 }
 
-.offerings ul {
-	font-size: 14px;
+.offerings ol {
+	font-size: 0.875em;
 	text-align: left;
 	font-weight: 100;
 	width: 80%;
@@ -1031,17 +1055,19 @@ footer a {
 }
 
 .caption p{
-	font-size: 16px;
+	font-size: 1em;
 	text-align: left;
 	font-weight: 200;
 	line-height: 20px;
 	width: 70%;
+	margin-top: 4em;
 	margin-bottom: 4em;
     left: 50%;
+    top: 25%;
 }
 
   #faqs {
-	font-size: 16px;
+	font-size: 1em;
 	line-height: 18px;
   }
 
@@ -1078,27 +1104,46 @@ footer a {
   #toggle3:checked ~ #content3,
   #toggle4:checked ~ #content4,
   #toggle5:checked ~ #content5 {
-    height: 240px;
     padding-top: 2vh;
     padding-right: 4vw;
     padding-left: 0;
   }
+  
+  #toggle1:checked ~ #content1 {
+    height: 240px;
+  }
+
+  #toggle2:checked ~ #content2 {
+    height: 140px;
+  }
+
+  #toggle3:checked ~ #content3 {
+    height: 240px;
+  }
+
+  #toggle4:checked ~ #content4 {
+    height: 350px;
+  }
+
+  #toggle5:checked ~ #content5 {
+    height: 240px;
+  }
 
   footer h2 {
-	font-size: 20px;
+	font-size: 1.250em;
 	padding-top: 30%;
 	line-height: 1.3;
   }
 
   footer p {
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: 200;
 	padding-top: 8%;
 	width: 80%;
   }
 
   footer h3 {
-	font-size: 20px;
+	font-size: 1.250em;
 	padding-top: 10%;
   }
 
@@ -1150,8 +1195,7 @@ footer a {
   #arrow {
 	position: absolute;
 	margin-right: auto;
-	margin-top: 100%;
-	width: 100%;
+	margin-top: 23em;
   }
 
   #arrow img{
