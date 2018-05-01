@@ -613,6 +613,10 @@ header h1 {
     margin-left: -1.1em; 
 }
 
+.offerings li {
+	padding-bottom: 5px;
+}
+
 .caption {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
@@ -1063,7 +1067,7 @@ footer a {
 	padding-top: 5%;
 	font-weight: 100;
 	width: 80%;
-	line-height: 27px;
+	line-height: 20px;
 	left: 40%;
 	-webkit-transform: translateX(-50%);
 	-ms-transform: translateX(-50%);
@@ -1230,7 +1234,7 @@ footer a {
 	position: relative;
 	margin-left: -20%;
 	margin-right: 0;
-	margin-top: -16em;
+	margin-top: -14em;
   }
 
   #info {
@@ -1253,11 +1257,6 @@ footer a {
   .offerings ol {
 	padding-top: 15%;
 	padding-bottom: 15%;
-  }
-
-  .offerings h2 {	
-	text-align: center;
-	left: 0;
   }
 
   .togglebox {
@@ -1305,7 +1304,9 @@ footer a {
 @media screen and (max-width: 321px) {
 
   .background_box{
-	height: 70vh;
+	height: 72vh;
+	margin-top: -16em;
+  }
   }
 
   .offerings h2 {	
