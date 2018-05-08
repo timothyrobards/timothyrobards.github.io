@@ -202,21 +202,24 @@ body p {
 .card img:hover {
 	-webkit-transform: scale(1.2);
  	transform: scale(1.1);
- 	
 }
 
+.bordered {
+	width: 100%;
+	margin-left: 0;
+}
 
 .row4 .bordered h2{
 	font-weight: 600;
 	padding-left: 10%;
-	padding-right: 5%;
+	padding-right: 10%;
 	padding-top: 5%;
 }
 
 .row4 .bordered p{
 	font-size: 14px;
 	padding-left: 10%;
-	padding-right: 5%;
+	padding-right: 10%;
 }
 .carousel-caption{
 	color: #000;
@@ -229,8 +232,6 @@ body p {
 .bordered a {
 	text-decoration: none !important;
 }
-
-
 
 .row-full {
 	height:100vh;
@@ -371,11 +372,11 @@ label {
 }
 
 .grey {
-	color: #898989;
+	color: #212529;
 }
 .font10{
 	font-size: 10px !important;
-	color: #898989;
+	color: #212529;
 }
 /*
 .buttonh {
@@ -393,10 +394,31 @@ label {
 	margin-left: 20px;
 }
 
-.welcomer2 img{
-	height: 50vh;
+.noexpand {
+	overflow: hidden !important;
+	height: inherit;
+	width: inherit;
+}
+
+.morephotos {
+	display: none;
+}
+
+.rempad {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.noexpand img:hover {
+	-webkit-transform: scale(1.2);
+ 	transform: scale(1.1);
+}
+
+.noexpand img{
+	height: 50vh !important;
 	object-fit: cover;
 	width: 100%;
+	transition: all 0.3s;
 }
 
 .welcomer2 p{
@@ -505,6 +527,10 @@ label {
 	color: #fff !important;
 }
 
+/* ======================= IN THE MAKING ======================= */
+
+
+
 /* ====================== GOOGLE MAP ====================== */
 
 
@@ -592,7 +618,7 @@ html, body {
 
 /* Medium to Large Devices*/
 
-@media (min-width: 768px) {
+@media (min-width: 1199px) {
 
 	.nav-icon {
 		display: none;
@@ -615,7 +641,7 @@ html, body {
 
 /* Small to Medium Devices*/
 
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
 	
 .container-fluid {
     margin-right: auto;
@@ -666,13 +692,13 @@ html, body {
 	padding-left: 1rem !important;
 	padding-right: 1rem !important;
 	line-height: 1.3;
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 0.5px 2px #3f3f3f;
 }
 
 .row-jumbotron h1, .mobiletext h1 {
 	padding-left: 1rem !important;
 	padding-right: 1rem !important;
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 0.5px 2px #3f3f3f;
 }
 
 .row-jumbotron .btn, .mobiletext .btn{
@@ -857,6 +883,14 @@ html, body {
 	margin-left: auto;
 	margin-right: 10px;
 }*/
+
+.morephotos{
+	display: block;
+	position: absolute;
+	top: 25px;
+    right: 50px;
+	z-index: 1;
+}
 
 .welcomer2 {
 	padding-bottom: 5em;
