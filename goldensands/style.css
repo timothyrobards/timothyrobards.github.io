@@ -530,6 +530,22 @@ label {
 /* ======================= IN THE MAKING ======================= */
 
 
+.inthemaking {	
+	background-image: url(assets/imgs/GoldenSands-ComingSoon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 45%;
+	height: 63vh;
+}
+
+.inthemaking .navbar-nav a {
+	color: #fff !important;
+}
+
+#comingsoon {
+	margin-bottom: 4em;
+}
+
 
 /* ====================== GOOGLE MAP ====================== */
 
@@ -947,6 +963,10 @@ html, body {
 
 .comingsoon {
     font-size: 30px;
+}
+
+#comingsoon {
+	margin-bottom: 0em;
 }
 
 .leftmar {
