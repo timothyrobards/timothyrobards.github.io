@@ -339,7 +339,7 @@ header h1 {
           "aboutp3 aboutp3"
           "aboutp4 aboutp4";
 
-    padding-top: 6em;
+    padding-top: 7em;
     padding-bottom: 5em;
     position: relative;
 }
@@ -359,9 +359,9 @@ header h1 {
 	font-weight: 800;
 	text-decoration: underline;
 	color: #FDF4EC;
-	text-align: right;
-	text-align: -webkit-right;
-	padding-right: 1em;
+	left: 60%;
+  	top: 50%;
+  	transform: translate(-50%,-50%);
 	height: 100%;
 	position: absolute;
 	margin-top: -1em;
@@ -895,6 +895,7 @@ footer a {
    	margin: 0 auto;
    	padding-right: 0;
    	margin-bottom: 1em;
+   	transform: none;
    	-webkit-box-sizing: border-box;
    	        box-sizing: border-box;
     width: 70%;
