@@ -339,7 +339,7 @@ header h1 {
           "aboutp3 aboutp3"
           "aboutp4 aboutp4";
 
-    padding-top: 3em;
+    padding-top: 6em;
     padding-bottom: 5em;
     position: relative;
 }
@@ -360,6 +360,7 @@ header h1 {
 	text-decoration: underline;
 	color: #FDF4EC;
 	text-align: right;
+	text-align: -webkit-right;
 	padding-right: 1em;
 	height: 100%;
 	position: absolute;
@@ -629,6 +630,7 @@ header h1 {
 	position: relative;
 	color: #ee3124;
 	text-align: left;
+	text-align: -webkit-left;
 	width: 67%;
 	margin: 0;
     top: 35%;
