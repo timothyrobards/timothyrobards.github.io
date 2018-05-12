@@ -627,7 +627,6 @@ header h1 {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
 	grid-area: caption;
-	position: relative;
 }
 
 .caption p{
