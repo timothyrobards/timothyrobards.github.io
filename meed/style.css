@@ -627,18 +627,20 @@ header h1 {
 	-ms-grid-row: 2;
 	-ms-grid-column: 2;
 	grid-area: caption;
+	position: relative;
 }
 
 .caption p{
 	font-size: 1.500em;
 	line-height: 37px;
-	position: relative;
+	position: absolute;
 	color: #ee3124;
 	text-align: left;
 	text-align: -webkit-left;
 	width: 67%;
-	margin: 0;
-    top: 35%;
+	margin-left: auto;
+	margin-right: auto;
+    top: 30%;
     left: 45%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -1056,6 +1058,7 @@ footer a {
 }
 
 .offerings {
+	margin-top: 8em;
 	margin-bottom: 8em;
 	width: 100%;
 }
