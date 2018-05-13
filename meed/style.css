@@ -975,6 +975,10 @@ footer a {
   	display: none;
   }
 
+  .safari #info_circletext {
+  	display: none;
+  }
+
   #info_h2_mobile{
 	display: block;
 	font-family: "soleil",sans-serif;
