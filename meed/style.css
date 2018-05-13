@@ -807,16 +807,7 @@ footer a {
 /* ==================== MEDIA QUERIES ==================== */
 
 
-@media not all and (min-resolution:.001dpcm)
-{ @supports (-webkit-appearance:none) {
 
-    .safari_only { 
-
-        color:blue; 
-        background-color:#CCCCCC; 
-
-    }
-}}
 /* Desktop & Above*/
 
 @media only screen and (min-width: 900px) {
@@ -974,6 +965,16 @@ footer a {
 	display: block;
 	font-family: "soleil",sans-serif;
 	color: red;
+	position: absolute;
+	right: 25%;
+	font-size: 1.250em; 
+	margin-top: -9em;
+  }
+
+  .safari #info_h2_mobile{
+	display: block;
+	font-family: "soleil",sans-serif;
+	color: green;
 	position: absolute;
 	right: 25%;
 	font-size: 1.250em; 
