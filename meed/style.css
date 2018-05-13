@@ -450,7 +450,7 @@ header h1 {
 }
 
 #info_h2 {
-	color: red;
+	color: #ee3124;
 	font-family: "soleil",sans-serif;
 	position: absolute;
 	right: 25%;
@@ -470,6 +470,9 @@ header h1 {
   	display: block;
 	position: absolute;
 	right: 10%;  
+}
+.safari #info_h2 {
+  	display: none; 
 }
 
 .info_p1{
@@ -567,7 +570,7 @@ header h1 {
 	position: relative;
 	z-index: 2;
 	width: 65vw;
-	border-left: solid 5px red;
+	border-left: solid 5px #ee3124;
 	margin: 0 auto;
 }
 
@@ -576,8 +579,8 @@ header h1 {
 	position: relative;
 	z-index: 2;
 	width: 40vw;
-	border-right: solid 5px red;
-	border-bottom: solid 5px red;
+	border-right: solid 5px #ee3124;
+	border-bottom: solid 5px #ee3124;
     -webkit-box-shadow: 10px 10px 0px 0px white;
             box-shadow: 10px 10px 0px 0px white;
 	margin: 0 auto;
@@ -591,8 +594,8 @@ header h1 {
     left: 20px;
     right: -20px;
     bottom: -20px;
-    border-right: 5px solid red;
-    border-bottom: 5px solid red;
+    border-right: 5px solid #ee3124;
+    border-bottom: 5px solid #ee3124;
 }
 
 .offerings {
@@ -982,7 +985,7 @@ footer a {
   #info_h2_mobile{
 	display: block;
 	font-family: "soleil",sans-serif;
-	color: red;
+	color: #ee3124;
 	position: absolute;
 	right: 25%;
 	font-size: 1.250em; 
@@ -1047,7 +1050,7 @@ footer a {
 	position: relative;
 	z-index: 2;
 	width: 80vw;
-	border-left: solid 5px red;
+	border-left: solid 5px #ee3124;
 	margin: 0 auto;
 }
 
@@ -1056,8 +1059,8 @@ footer a {
 	position: relative;
 	z-index: 2;
 	width: 80vw;
-	border-right: solid 4px red;
-	border-bottom: solid 4px red;
+	border-right: solid 4px #ee3124;
+	border-bottom: solid 4px #ee3124;
     -webkit-box-shadow: 8px 8px 0px 0px white;
             box-shadow: 8px 8px 0px 0px white;
 	margin: 0 auto;
@@ -1071,8 +1074,8 @@ footer a {
     left: 20px;
     right: -15px;
     bottom: -15px;
-    border-right: 4px solid red;
-    border-bottom: 4px solid red;
+    border-right: 4px solid #ee3124;
+    border-bottom: 4px solid #ee3124;
 }
 
 .offerings {
