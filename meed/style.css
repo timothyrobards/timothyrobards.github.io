@@ -449,8 +449,18 @@ header h1 {
 	padding-bottom: 1em;
 }
 
-#info_h2{
+#info_h2 {
 	color: red;
+	font-family: "soleil",sans-serif;
+	position: absolute;
+	right: 25%;
+	font-size: 3.125em;
+}
+
+/* SAFARI ONLY for circletype bug */
+
+.safari #info_h2 {
+	color: blue;
 	font-family: "soleil",sans-serif;
 	position: absolute;
 	right: 25%;
@@ -964,6 +974,16 @@ footer a {
 	display: block;
 	font-family: "soleil",sans-serif;
 	color: red;
+	position: absolute;
+	right: 25%;
+	font-size: 1.250em; 
+	margin-top: -9em;
+  }
+
+  .safari #info_h2_mobile{
+	display: block;
+	font-family: "soleil",sans-serif;
+	color: green;
 	position: absolute;
 	right: 25%;
 	font-size: 1.250em; 
