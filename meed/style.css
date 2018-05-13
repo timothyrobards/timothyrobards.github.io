@@ -457,15 +457,6 @@ header h1 {
 	font-size: 3.125em;
 }
 
-/* SAFARI ONLY for circletype bug */
-
-.safari #info_h2 {
-	color: blue;
-	font-family: "soleil",sans-serif;
-	position: absolute;
-	right: 25%;
-	font-size: 3.125em;
-}
 
 #info_h2_mobile {
 	display: none;
@@ -815,7 +806,14 @@ footer a {
 
 /* ==================== MEDIA QUERIES ==================== */
 
+@media not all and (min-resolution:.001dpcm) { @media {
 
+    .safari_only { 
+
+        color:blue; 
+
+    }
+}}
 
 /* Desktop & Above*/
 
@@ -974,16 +972,6 @@ footer a {
 	display: block;
 	font-family: "soleil",sans-serif;
 	color: red;
-	position: absolute;
-	right: 25%;
-	font-size: 1.250em; 
-	margin-top: -9em;
-  }
-
-  .safari #info_h2_mobile{
-	display: block;
-	font-family: "soleil",sans-serif;
-	color: green;
 	position: absolute;
 	right: 25%;
 	font-size: 1.250em; 
