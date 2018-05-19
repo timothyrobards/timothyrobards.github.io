@@ -202,10 +202,9 @@ body {
     width: 65%;
   }
 
-}
-
-.description {
-  margin-bottom: 1em;
+  .description {
+    margin-bottom: 1em;
+  }
 }
 
 /* 375px or less */
@@ -261,10 +260,10 @@ body {
   }
 
 /* Mobile landscape */
-@media screen and (max-width: 813px) and (orientation:landscape) {
+@media screen and (max-width: 813px) and (max-height: 375px) and (orientation: landscape) {
   
-  * {
-    font-size: 10px;
+  .container {
+    width: 95%;
   }
 
 }
