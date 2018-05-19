@@ -220,7 +220,11 @@ body {
   }
 
   .container {
-    width: 68%;
+    width: 72%;
+  }
+
+  .heading {
+    margin-top: 0;
   }
 
   .email {
