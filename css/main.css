@@ -150,12 +150,12 @@ body {
 .container {
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas:  "heading heading"
-                        "description description"
-                        "email email"
-                        "social social";
-  width: 40%;
+  grid-template-columns: 1fr;
+  grid-template-areas:  "heading"
+                        "description"
+                        "email"
+                        "social";
+  
   margin: 0 auto;
   position: relative;
   top: 50%;
@@ -164,24 +164,38 @@ body {
 
 .heading {
   grid-area: heading;
+  width: 100%;
+  font-size: 120px;
+  margin: 0;
+  color: blue;
+  padding-left: 20px;
+  margin-top: -1em;
+  margin-bottom: .5em;
 }
 
 .description {
   grid-area: description;
-  margin: 0;
+  margin: 0 auto;
+  width: 50%;
+  line-height: 28px;
+  font-size: 18px;
 }
 
 .email {
   grid-area: email;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 1em;
+  width: 50%;
 }
 
 .social {
   grid-area: social;
+  margin: 0 auto;
   text-align: left;
   margin-top: 2em;
+  width: 50%;
 }
+
 .social img {
   width: 40px;
   height: auto;
@@ -191,73 +205,87 @@ body {
 
 /* MEDIA QUERIES*/
 
+/* 1204px or less */
+@media only screen and (max-width: 1200px) {
+
+  .heading {
+    width: 80%;
+    font-size: 48px;
+    margin: 0;
+    padding-left: .5em;
+    margin-top: -1em;
+    margin-bottom: .25em;
+  }
+
+  .description, .email, .social {
+    width: 80%;
+  }
+}  
 
 /* 768px or less */
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 812px) {
+
+  .heading {
+    font-size: 48px;
+    padding-left: 0;
+    text-align: center;
+    width: 100%;
+  }
 
   .box {
     width: 94vw; 
   }
 
-  .container {
-    width: 65%;
-  }
-
   .description {
     margin-bottom: 1em;
+  }
+  
+  .email {
+    padding-top: 0px;
+  }
+
+  .social {
+    margin-top: 10px;
   }
 }
 
 /* 375px or less */
-@media screen and (max-width: 375px) {
-
-  p {
-    font-size: 14px;
-  }
+@media only screen and (max-width: 475px) {
 
   .box {
     width: 92vw; 
   }
 
   .container {
-    width: 72%;
+    width: 90%;
   }
 
   .heading {
     margin-top: 0;
+    font-size: 48px;
+    width: 100%;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   .email {
     margin-bottom: 1em;
+    font-size: 14px;
   }
   
   .social {
     margin-top: 1em;
+    width: 100%;
+    text-align: center;
   }
 
   .social img {
-    width: 30px;
-    padding-right: 10px;
-  }
-}
-
-/* 320px or less */
-@media screen and (max-width: 320px) {
-
-  .container {
-    width: 78%;
-  }
-
-  .heading {
-    margin-top: 0;
-  }
-
-  .social {
-    margin-top: 1em;
-  }
-
-  .social img {
-    padding-right: 5px;
+    width: 48px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -268,7 +296,7 @@ and (max-device-width : 667px)
 and (orientation : landscape) { 
 
   .container {
-    width: 85%;
+    width: 100%;
   }
 
   .box {
@@ -276,33 +304,80 @@ and (orientation : landscape) {
     height: 94vh;    
   }
 
+  .heading {
+    margin-top: 0;
+    font-size: 38px;
+  }
+
   .description {
-    font-size: 12px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .email {
+    padding-top: 0;
   }
 
   .social {
     margin-top: 1em;
+    margin-left: 3.4em;
+  }
+
+  .social img {
+    width: 48px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 
 }
 
+/* 320px or less */
+
+@media only screen and (max-width: 320px) {
+
+  .heading {
+    margin-bottom: 10px;
+  }
+
+  .description {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .social {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .social img {
+    width: 44px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .email {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+
 /* iPhone+ portrait & landscape */
+
 @media only screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px) { 
 
-  .box {
-    width: 94vw; 
-    height: 94vh;    
-  }
-
-  .social img {
-    padding-right: 4px;
-  }
+ 
 
 }
 
 /* iPhoneX landscape */
+/*
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 812px) 
