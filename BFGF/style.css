@@ -603,25 +603,25 @@ and (max-device-width : 667px) {
 
   .leadtext {
     width: 70vw;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 30px;
   }
 
   .lefttext {
     width: 70vw;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 30px;
   }
 
   .leftabouttext {
     width: 70vw;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 30px;
   }
 
   .righttext {
     width: 70vw;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 30px;
   }  
 
