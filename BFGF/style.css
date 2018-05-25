@@ -639,7 +639,7 @@ and (max-device-width : 667px) {
 
 }
 
-/*  iPhone 6,7,8 Landscape (expanded to 7+) */
+/*  iPhone 6,7,8 Landscape  */
 
 @media only screen 
 and (min-device-width : 375px) 
@@ -647,8 +647,8 @@ and (max-device-width : 667px)
 and (orientation : landscape) {
 
   .leadtext {
-    margin-top: 10em;
-    padding-top: 8em;
+    margin-top: 8em;
+    padding-top: 7em;
   }
 
   .leftabouttext {
@@ -660,7 +660,7 @@ and (orientation : landscape) {
   }
 
   header {
-    height: 200px;  
+    height: 20vh;  
   }
 
   .contentimages{
