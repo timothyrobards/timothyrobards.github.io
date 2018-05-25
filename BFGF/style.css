@@ -536,7 +536,7 @@ span.text-content p {
 
 /*  MOBILE UP */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
   
   .mobileprojects {
     display: none;
