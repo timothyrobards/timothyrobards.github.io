@@ -50,6 +50,10 @@ table {
     -ms-user-select: none; /* IE10+ */
 }
 
+  .mobileprojects {
+    display: none;
+  }
+
 /* ====================== GRID SETUP ====================== */
 
 .container {
@@ -532,7 +536,7 @@ span.text-content p {
 
 /*  MOBILE UP */
 
-@media only screen and (min-width: 415px) and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   
   .mobileprojects {
     display: none;
@@ -672,7 +676,25 @@ and (orientation : landscape) {
 
 }
 
-  
+/*  iPhone 5 Landscape */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+
+  .leadtext {
+    margin-top: 15em;
+    padding-top: 10em;
+  }
+
+  .leftabouttext {
+    margin-top: 10em;
+    padding-top: 6em;
+  }
+
+}
+
 
 
 
