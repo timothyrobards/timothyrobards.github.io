@@ -601,12 +601,30 @@ span.text-content p {
 and (min-device-width : 320px) 
 and (max-device-width : 667px) {
 
-  #aboutitem {
-    display: none;
+  .leadtext {
+    width: 70vw;
+    font-size: 18px;
+    line-height: 22px;
   }
 
-  .mobileprojects {
-    display: block;
+  .lefttext {
+    width: 70vw;
+  }
+
+  .leftabouttext {
+    width: 70vw;
+  }
+
+  .righttext {
+    width: 70vw;
+  }  
+
+  .title {
+    font-size: 30px;
+  }
+
+  .about {
+    font-size: 30px;
   }
 
 }
