@@ -634,11 +634,44 @@ and (max-device-width : 667px) {
   }
 
   .aboutfix {
-    margin-right: -25px;
+    margin-right: -20px;
   }
 
 }
 
+/*  iPhone 6,7,8 Landscape (expanded to 7+) */
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+
+  .leadtext {
+    margin-top: 10em;
+    padding-top: 8em;
+  }
+
+  .leftabouttext {
+    margin-top: 10em;
+  }
+
+  .righttext {
+    margin-bottom: 5em;
+  }
+
+  header {
+    height: 20vh;  
+  }
+
+  .contentimages{
+    padding-top: 2em;
+  }
+
+  #logotop {
+    height: 7vh;
+  }
+
+}
 
   
 
