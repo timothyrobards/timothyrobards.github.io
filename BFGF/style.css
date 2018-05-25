@@ -642,8 +642,8 @@ and (max-device-width : 667px) {
 /*  iPhone 6,7,8 Landscape (expanded to 7+) */
 
 @media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
 and (orientation : landscape) {
 
   .leadtext {
