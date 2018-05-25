@@ -1,0 +1,728 @@
+ /* ====================== CSS RESET ====================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *:before, *:after {
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+/* ====================== GRID SETUP ====================== */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  grid-template-areas:
+    "main";
+}
+
+/* ===================== HEADER (NAV) ===================== */
+
+header {
+  position: absolute; 
+  top: 0;
+  width: 100vw;
+  max-width: 100%; 
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logotop {
+   height: 4vh;
+}
+
+/* about page fix*/
+#logotopoffset {
+   height: 4vh;
+   margin-left: -17px;
+}
+
+/* ===================== MAIN SECTION ===================== */
+
+#main {
+  grid-area: main;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  height: 10vh;
+}
+
+.BF img {
+  height: 60vh;
+  margin-left: -20%;
+}
+
+.GF img {
+  height: 60vh;
+  margin-left: 20%;
+}
+
+.BF img:last-child{
+  display:none;
+  
+}
+.BF:hover img:first-child{
+  display:none;
+  
+}
+.BF:hover img:last-child{
+  display:inline-block;
+}
+
+.GF img:last-child{display:none}
+.GF:hover img:first-child{display:none}
+.GF:hover img:last-child{display:inline-block}
+
+/* --- NAV --- */
+
+#nav {
+  position: absolute;
+  top: 2em;
+  left: 0;
+}
+
+#nav li {
+  display: inline;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #707070;
+  padding-left: 2.5em;
+}
+
+#nav a {
+  text-decoration: none;
+}
+
+#nav li span:hover {
+  border-bottom: 3px solid #707070;
+}
+
+#aboutus {
+  position: absolute;
+  top: 2em;
+  right: 4em;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #707070;
+  width: 13em;
+}
+
+/* MOBILE NAV */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.overlay a {
+  padding: 18px;
+  text-decoration: none;
+  font-family: futura-pt, sans-serif;
+  font-size: 2.250em;
+  color: #000;
+  display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a#email {
+  font-size: 1.250em;
+  margin-top: 0.75em;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #000;
+  text-decoration: underline;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: -0.05em;
+  right: 0.1em;
+  font-size: 3.750em;
+  text-decoration: none !important;
+}
+
+#burger {
+  position: absolute;
+  top: 1em;
+  right: 0;
+  font-size: 1.938em;
+  cursor: pointer;
+  color: #000;
+  margin-left: auto;
+  padding-right: 0.8em;
+}
+  
+/* ============ INDIVIDUAL PROJECT PAGES ============ */
+
+/* -- SIDEWAYS MENU TITLES -- */
+#content {
+  grid-area: main;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ================== PROJECT PAGE =================== */
+
+/* -- PORTFOLIO GALLERY -- */
+
+.images li {
+    float: left;
+    position: relative;
+}
+
+.photo1 {
+  background: url(assets/images/MeedLogo.gif);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 50%;
+}
+
+.photo2 {
+  background: url(assets/images/sanfranpridesoap-NEWCOLOURS.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 50%;
+}
+
+.photo3 {
+  background: url(assets/images/GS_PORTFOLIO1.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 50%;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+#gallery {
+  margin-top: 14vh; 
+}
+
+#gallery li:hover {
+  background: rgba(255,255,255, 1);
+  transition: .15s ease;
+  z-index: 9;
+  text-align: center;
+}
+
+span.text-content {
+  color: #000;
+  font-size: 20px;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+span.text-content p {
+  font-size: 14px;
+}
+
+#copyright {
+  position: relative; 
+  width: 100vw;
+  max-width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: futura-pt, sans-serif;
+  line-height: 80px;
+  padding-top: 30px;
+}
+
+/* ================== PORTFOLIO ITEM STRUCTURE =================== */
+
+.title {
+  font-size: 16px;
+  font-family: futura-pt, sans-serif;
+  line-height: 120px;
+  color: red;
+  font-weight: bold;
+  position: absolute;   
+  position: fixed;
+  margin-left: 30px;
+
+  /* Rotate Text */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.about {
+  font-size: 16px;
+  font-family: futura-pt, sans-serif;
+  line-height: 120px;
+  font-weight: bold;
+  text-decoration: none;
+  position: absolute;
+  position: fixed;
+  right: 0;
+  margin-right: -1em;
+  
+  /* Rotate Text */
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.about a {
+  color: red;
+  text-decoration: none;
+}
+
+.aboutfix {
+  margin-right: 10px;
+}
+
+/* Images UL */
+
+.contentimages{
+  width: 70vw;
+  margin-top: 14vh;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 14vh;
+}
+
+.contentimages li:nth-of-type(4) {
+  text-align: center;
+  padding-top: 7vh;
+}
+
+.contentimages img{
+  width: 100%;
+  height: auto;
+}
+
+.projects {
+  font-size: 20px;
+  font-family: futura-pt, sans-serif;
+  line-height: 30px;
+  font-weight: bold;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects a {
+  color: red;
+  text-decoration: none;
+}
+
+/* About Text Formatting */
+
+.text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
+  grid-template-areas:
+    "leadp leadp"
+    "leftp rightp";
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 0 auto;
+}
+
+.leadtext {
+  grid-area: leadp;
+  width: 60vw;
+  font-size: 24px;
+  font-family: futura-pt, sans-serif;
+  line-height: 30px;
+}
+
+.lefttext {
+  grid-area: leftp;
+  width: 30vw;
+  font-size: 16px;
+  font-family: futura-pt, sans-serif;
+  line-height: 22px;
+}
+
+.leftabouttext {
+  grid-area: leftp;
+  width: 30vw;
+  font-size: 16px;
+  font-family: futura-pt, sans-serif;
+  line-height: 22px;
+}
+
+.righttext {
+  grid-area: rightp;
+  width: 30vw;
+  font-size: 16px;
+  font-family: futura-pt, sans-serif;
+  line-height: 22px;
+}
+
+/* for main 'About' page (removed lead <p>)*/
+.maintext {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  grid-template-areas:
+    "leftp rightp";
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 0 auto;
+}
+
+
+/* ==================== MEDIA QUERIES ===================== */
+
+/* Remove Logo:hover < desktop */
+
+@media only screen and (max-width: 1365px) {
+
+  .BF {
+    display: none;
+  }
+
+  .GF {
+    display: none;
+  }
+
+}
+
+/* iPad landscape*/
+
+@media only screen and (max-width: 1024px) {
+
+  #logotopoffset {
+    margin-left: 0px;
+  }
+
+  .aboutfix {
+    margin-right: -5px;
+  }
+
+}
+
+/* Desktop & Above */
+
+@media only screen and (min-width: 769px) {
+
+  #mobilenav {
+    display: none;
+  }
+
+}
+
+/*  TABLET  */
+
+@media only screen and (max-width: 768px) {
+  
+  #nav {
+    display: none;
+  }
+  
+  #aboutus {
+    display: none;
+  }
+
+  .photo1 {
+    height: 250px;
+    width: 100%;
+  }
+
+  .photo2 {
+    height: 250px;
+    width: 100%;
+  }
+
+  .photo3 {
+    height: 250px;
+    width: 100%;
+  }
+  
+  .text {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "leadp"
+      "leftp" 
+      "rightp";
+  }
+
+  .maintext {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "leftp" 
+      "rightp";
+  }
+
+  .leadtext {
+    width: 60vw;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .lefttext {
+    width: 60vw;
+  }
+
+  .leftabouttext {
+    width: 60vw;
+  }
+
+  .righttext {
+    width: 60vw;
+  }
+
+  #logotopoffset {
+   height: 4vh;
+   margin-left: 0px;
+}
+
+}
+
+/*  MOBILE UP */
+
+@media only screen and (min-width: 415px) {
+  
+  .mobileprojects {
+    display: none;
+  }
+
+}
+
+/*  MOBILE  to iPhone 7+*/
+
+@media only screen and (max-width: 414px) {
+
+  .aboutitem {
+    display: none;
+  }
+
+  .leadtext {
+    margin-top: 12em;
+    padding-top: 6em;
+    width: 65vw;
+  }
+
+  .leftabouttext {
+    margin-top: 7em;
+  }
+
+  .lefttext {
+    width: 65vw;
+  }
+
+  .righttext {
+    margin-bottom: 2em;
+    width: 65vw;
+  }
+
+  .contentimages{
+    width: 90vw;
+    margin-right: auto;
+    padding-bottom: 14vh;
+  }
+
+  .itemtext {
+    padding-left: 4em;
+  }
+
+  .mobileprojects {
+    position: relative;
+    font-size: 20px;
+    font-family: futura-pt, sans-serif;
+    font-weight: bold;
+    padding-bottom: 2em;
+    margin-left: -3.3em;
+    display: flex;
+    justify-content: center;
+  }
+
+  .mobileprojects a {
+    color: red;
+    text-decoration: none;
+  }
+
+}
+
+/*  iPhone 5 */
+
+@media only screen and (max-width: 320px)  { 
+
+  .leadtext {
+    padding-top: 18em;
+  }
+
+  .leftabouttext {
+    padding-top: 10em;
+  }
+
+}
+
+/*  iPhone 6,7,8 Landscape (expanded to 7+) */
+
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) 
+and (orientation : landscape) {
+
+  .leadtext {
+    margin-top: 10em;
+    padding-top: 8em;
+  }
+
+  .leftabouttext {
+    margin-top: 10em;
+  }
+
+  .righttext {
+    margin-bottom: 5em;
+  }
+
+  header {
+    height: 20vh;  
+  }
+
+  .contentimages{
+    padding-top: 2em;
+  }
+
+  #logotop {
+    height: 7vh;
+  }
+
+}
+
+/*  iPhone 5 Landscape */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+
+  .leadtext {
+    margin-top: 15em;
+    padding-top: 10em;
+  }
+
+  .leftabouttext {
+    margin-top: 10em;
+    padding-top: 6em;
+  }
+
+}
+
+/*  iPhone X Landscape */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3) {
+
+  .leadtext {
+    margin-top: 25em;
+    padding-top: 20em;
+  }
+
+}
+
+
+
+
+
+
