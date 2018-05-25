@@ -603,20 +603,26 @@ and (max-device-width : 667px) {
 
   .leadtext {
     width: 70vw;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .lefttext {
     width: 70vw;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .leftabouttext {
     width: 70vw;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   .righttext {
     width: 70vw;
+    font-size: 24px;
+    line-height: 30px;
   }  
 
   .title {
@@ -625,6 +631,10 @@ and (max-device-width : 667px) {
 
   .about {
     font-size: 30px;
+  }
+
+  .aboutfix {
+    margin-right: -25px;
   }
 
 }
