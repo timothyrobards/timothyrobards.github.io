@@ -660,7 +660,7 @@ and (orientation : landscape) {
   }
 
   header {
-    height: 20vh;  
+    height: 200px;  
   }
 
   .contentimages{
