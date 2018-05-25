@@ -651,11 +651,11 @@ and (max-device-width : 667px)
 and (orientation : landscape) {
 
   .leadtext {
-    padding-top: 14em;
+    padding-top: 12em;
   }
 
   .leftabouttext {
-    margin-top: 8em;
+    margin-top: 6em;
   }
 
   .righttext {
