@@ -653,7 +653,9 @@ and (max-device-width : 667px)
 and (orientation : landscape) {
 
   .leadtext {
+    padding-top: 8em;
     margin-top: 20em;
+    color: blue;
   }
 
   .leftabouttext {
