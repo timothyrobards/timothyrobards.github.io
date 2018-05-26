@@ -607,27 +607,27 @@ and (max-device-width : 667px) {
 
   .leadtext {
     width: 70vw;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .lefttext {
     width: 70vw;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 28px;
     padding-top: 1em;
   }
 
   .leftabouttext {
     width: 70vw;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .righttext {
     width: 70vw;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 28px;
     padding-top: 1em;
   }  
 
@@ -655,7 +655,7 @@ and (orientation : landscape) {
   .leadtext {
     padding-top: 8em;
     margin-top: 20em;
-    color: blue;
+    color: green;
   }
 
   .leftabouttext {
