@@ -534,59 +534,6 @@ span.text-content p {
 
 }
 
-/*  iPhone 6,7,8 Landscape  */
-
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) 
-and (orientation : landscape) {
-
-  .leadtext {
-    padding-top: 12em;
-  }
-
-  .leftabouttext {
-    margin-top: 6em;
-  }
-
-  .righttext {
-    margin-bottom: 5em;
-  }
-
-  header {
-    height: 20vh;  
-  }
-
-  .contentimages{
-    padding-top: 2em;
-  }
-
-  #logotop {
-    height: 7vh;
-  }
-
-}
-
-/*  iPhone 5 Landscape */
-
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) 
-and (orientation : landscape) { 
-
-  .leadtext {
-    margin-top: 15em;
-    padding-top: 10em;
-  }
-
-  .leftabouttext {
-    margin-top: 10em;
-    padding-top: 6em;
-  }
-
-}
-
-
 /*  MOBILE UP */
 
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
@@ -660,26 +607,28 @@ and (max-device-width : 667px) {
 
   .leadtext {
     width: 70vw;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 30px;
   }
 
   .lefttext {
     width: 70vw;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 1em;
   }
 
   .leftabouttext {
     width: 70vw;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .righttext {
     width: 70vw;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 1em;
   }  
 
   .title {
@@ -696,7 +645,62 @@ and (max-device-width : 667px) {
 
 }
 
+/*  iPhone 6,7,8 Landscape  */
 
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+
+  .leadtext {
+    margin-top: 14em;
+  }
+
+  .leftabouttext {
+    margin-top: 6em;
+  }
+  
+  .lefttext {
+    padding-top: 0em;
+  }
+
+  .righttext {
+    padding-top: 0em;
+    margin-bottom: 5em;
+  }
+
+  header {
+    height: 20vh;  
+  }
+
+  .contentimages{
+    padding-top: 2em;
+  }
+
+  #logotop {
+    height: 7vh;
+  }
+
+}
+
+/*  iPhone 5 Landscape */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+
+  .leadtext {
+    margin-top: 10em;
+    padding-top: 10em;
+  }
+
+  .leftabouttext {
+    margin-top: 10em;
+    padding-top: 6em;
+  }
+
+}
 
 
 
