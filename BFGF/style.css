@@ -330,7 +330,7 @@ span.text-content p {
 /* ================== PORTFOLIO ITEM STRUCTURE =================== */
 
 .title {
-  font-size: 16px;
+  font-size: 20px;
   font-family: futura-pt, sans-serif;
   line-height: 120px;
   color: red;
@@ -348,7 +348,7 @@ span.text-content p {
 }
 
 .about {
-  font-size: 16px;
+  font-size: 20px;
   font-family: futura-pt, sans-serif;
   line-height: 120px;
   font-weight: bold;
@@ -639,6 +639,10 @@ and (max-device-width : 667px) {
     font-size: 30px;
   }
 
+  .projects {
+    font-size: 30px;
+  }
+
   .aboutfix {
     margin-right: -20px;
   }
@@ -655,7 +659,6 @@ and (orientation : landscape) {
   .leadtext {
     padding-top: 10em !important;
     margin-top: 24em !important;
-    color: purple;
   }
 
   .leftabouttext {
@@ -669,6 +672,18 @@ and (orientation : landscape) {
   .righttext {
     padding-top: 0em;
     margin-bottom: 5em;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .about {
+    font-size: 20px;
+  }
+
+  .projects {
+    font-size: 20px;
   }
 
   header {
@@ -705,12 +720,65 @@ and (orientation : landscape) {
 }
 
 
+@media only all and (max-width: 415px) {
 
+ .mobileprojects {
+    display: none;
+  }
 
+  .photo1 {
+    height: 500px;
+    width: 100%;
+  }
 
+  .photo2 {
+    height: 500px;
+    width: 100%;
+  }
 
+  .photo3 {
+    height: 500px;
+    width: 100%;
+  }
 
+  .text {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "leadp"
+      "leftp" 
+      "rightp";
+  }
 
+  .maintext {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "leftp" 
+      "rightp";
+  }
 
+  .leadtext {
+    width: 60vw;
+    font-size: 18px;
+    line-height: 22px;
+  }
 
+  .lefttext {
+    width: 60vw;
+  }
 
+  .leftabouttext {
+    width: 60vw;
+  }
+
+  .righttext {
+    width: 60vw;
+  }
+
+  #logotopoffset {
+   height: 4vh;
+   margin-left: 0px;
+  }
+
+}
