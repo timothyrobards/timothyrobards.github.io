@@ -422,7 +422,8 @@ span.text-content p {
     "leftp rightp";
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .leadtext {
@@ -655,7 +656,7 @@ and (orientation : landscape) {
   .leadtext {
     padding-top: 8em;
     margin-top: 20em;
-    color: green;
+    color: red;
   }
 
   .leftabouttext {
