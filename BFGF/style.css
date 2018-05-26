@@ -654,8 +654,8 @@ and (orientation : landscape) {
 
   .leadtext {
     padding-top: 10em !important;
-    margin-top: 20em !important;
-    color: orange;
+    margin-top: 24em !important;
+    color: purple;
   }
 
   .leftabouttext {
