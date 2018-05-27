@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>BFGF</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- FONTS -->
+	<link rel="stylesheet" href="https://use.typekit.net/rtm2dtx.css">
+	<link rel="stylesheet" href="fonts.css">
+
+	<!-- Smooth Scroll -->
+    <script src="assets/js/smoothscroll.js"></script>
+
+    <!-- Overlay Transition -->
+	<script>
+	  function openNav() {
+	  document.getElementById("myNav").style.width = "100%";
+	  }
+
+	  function closeNav() {
+	  document.getElementById("myNav").style.width = "0%";
+	  }
+	</script>
+
+</head>
+<body>
+	
+<div class="container">
+	
+  <section id="main">
+  	
+	<!-- Nav -->
+
+	<div id="nav">
+	  <ul>
+	    <a href="projects.html"><li><span>projects</span></li></a>
+		<a href="about.html"><li><span>about</span></li></a>
+	  	<a href="mailto:hello@atelierbfgf.com"><li><span>hello@atelierbfgf.com</span></li></a>
+	  </ul>
+	</div>
+
+	<!-- Mobile Nav -->
+
+  	
+  	  <div id="myNav" class="overlay">
+	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  
+	    <div class="overlay-content">
+	  	<a href="projects.html" onclick="closeNav()">projects</a>
+	  	<a href="about.html" onclick="closeNav()">about</a>
+	  	<a href="mailto:hello@atelierbfgf.com" id="email" onclick="closeNav()">hello@atelierbfgf.com</a>
+	    </div>
+
+	  </div>
+
+    <div id="mobilenav"> 
+
+	  <span id="burger" onclick="openNav()">&#9776;</span>
+
+	</div>
+
+
+	<!-- Content -->
+
+	<div class="BF">
+        <img src="assets/images/BF-White.svg" />
+        <img src="assets/images/BF-Black.svg" />
+    </div>
+
+  	<img src="assets/images/BGFG-logo.png" id="logo" alt="BFGF Logo">
+
+  	<div class="GF">
+        <img src="assets/images/GF-White.svg" />
+        <img src="assets/images/GF-Black.svg" />
+    </div>
+
+  	<p id="aboutus">montreal based studio creating stuff for web and other stuff too. we're cool cats who will work hard for you.</p>
+
+  </section>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,265 @@
+
+
+/* iPad landscape*/
+
+@media only screen and (max-width: 1024px) {
+
+  #logotopoffset {
+    margin-left: 0px;
+  }
+
+  .aboutfix {
+    margin-right: -5px;
+  }
+
+}
+
+
+
+
+/*  MOBILE UP */
+
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
+  
+
+  .photo1 {
+    height: 500px;
+    width: 100%;
+  }
+
+  .photo2 {
+    height: 500px;
+    width: 100%;
+  }
+
+  .photo3 {
+    height: 500px;
+    width: 100%;
+  }
+
+  .text {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "leadp"
+      "leftp" 
+      "rightp";
+  }
+
+  .maintext {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "leftp" 
+      "rightp";
+  }
+
+  .leadtext {
+    width: 60vw;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .lefttext {
+    width: 60vw;
+  }
+
+  .leftabouttext {
+    width: 60vw;
+  }
+
+  .righttext {
+    width: 60vw;
+  }
+
+  #logotopoffset {
+   height: 4vh;
+   margin-left: 0px;
+  }
+
+}
+
+/*  iPhone 5,6,7,8  */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px) {
+
+  .leadtext {
+    width: 70vw;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .lefttext {
+    width: 70vw;
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 1em;
+  }
+
+  .leftabouttext {
+    width: 70vw;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .righttext {
+    width: 70vw;
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 1em;
+  }  
+
+  .title {
+    font-size: 30px;
+  }
+
+  .about {
+    font-size: 30px;
+  }
+
+  .projects {
+    font-size: 30px;
+  }
+
+  .aboutfix {
+    margin-right: -20px;
+  }
+
+}
+
+/*  iPhone 6,7,8 Landscape  */
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : landscape) {
+
+  .leadtext {
+    padding-top: 10em !important;
+    margin-top: 24em !important;
+  }
+
+  .leftabouttext {
+    margin-top: 6em;
+  }
+  
+  .lefttext {
+    padding-top: 0em;
+  }
+
+  .righttext {
+    padding-top: 0em;
+    margin-bottom: 5em;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .about {
+    font-size: 20px;
+  }
+
+  .projects {
+    font-size: 20px;
+  }
+
+  header {
+    height: 20vh;  
+  }
+
+  .contentimages{
+    padding-top: 2em;
+  }
+
+  #logotop {
+    height: 7vh;
+  }
+
+}
+
+/*  iPhone 5 Landscape */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+
+  .leadtext {
+    margin-top: 10em;
+    padding-top: 10em;
+  }
+
+  .leftabouttext {
+    margin-top: 10em;
+    padding-top: 6em;
+  }
+
+}
+
+/* This is repetition just so drag resize is not so wack.. MQ's are targetting individual devices*/
+
+@media only all and (max-width: 415px) {
+
+ .mobileprojects {
+    display: none;
+  }
+
+  .photo1 {
+    height: 500px;
+    width: 100%;
+  }
+
+  .photo2 {
+    height: 500px;
+    width: 100%;
+  }
+
+  .photo3 {
+    height: 500px;
+    width: 100%;
+  }
+
+  .text {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "leadp"
+      "leftp" 
+      "rightp";
+  }
+
+  .maintext {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+      "leftp" 
+      "rightp";
+  }
+
+  .leadtext {
+    width: 60vw;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .lefttext {
+    width: 60vw;
+  }
+
+  .leftabouttext {
+    width: 60vw;
+  }
+
+  .righttext {
+    width: 60vw;
+  }
+
+  #logotopoffset {
+   height: 4vh;
+   margin-left: 0px;
+  }
+
+}
