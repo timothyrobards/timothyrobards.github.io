@@ -261,7 +261,7 @@ header {
   width: 50%;
 }
 
-#images li:hover {
+#portfolio li:hover {
   background: rgba(255,255,255, 1);
   transition: .15s ease;
   z-index: 9;
@@ -372,7 +372,7 @@ span.text-content p {
   font-family: futura-pt, sans-serif;
   line-height: 30px;
   justify-self: center;
-  margin-top: 10vh;      /* not centered just a margin atm*/
+  margin-top: 10vh;      /* not centered just a margin atm - align:center?*/
 }
 
 .lefttext {
@@ -467,6 +467,19 @@ span.text-content p {
   .GF img {
     right: -2.2em;
   }
+
+  .photo1 {
+    width: 100%;
+  }
+
+  .photo2 {
+    width: 100%;
+  }
+
+  .photo3 {
+    width: 100%;
+  }
+
 }
 
 /* Switch to Mobile Menu */
@@ -496,18 +509,6 @@ span.text-content p {
 
   .GF {
     display: none;
-  }
-
-  .photo1 {
-    width: 100%;
-  }
-
-  .photo2 {
-    width: 100%;
-  }
-
-  .photo3 {
-    width: 100%;
   }
 
 
