@@ -541,23 +541,23 @@ span.text-content p {
   }
 
   .aboutitemgrid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 10vh auto auto auto;
     grid-template-areas:
-      "header header"
-      "leadp leadp"
-      "leftp leftp"
-      "rightp rightp";
+      "header"
+      "leadp"
+      "leftp"
+      "rightp";
     grid-column-gap: 1em;
     grid-row-gap: 1em;
     margin: 0 auto;
   }
 
   .leadtext {
-    width: 80%; 
+    width: 75%; 
     margin-top: 2vh;
     line-height: 34px;
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .lefttext {
