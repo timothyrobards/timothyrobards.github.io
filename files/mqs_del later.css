@@ -1,41 +1,6 @@
-
-
-/* iPad landscape*/
-
-@media only screen and (max-width: 1024px) {
-
-  #logotopoffset {
-    margin-left: 0px;
-  }
-
-  .aboutfix {
-    margin-right: -5px;
-  }
-
-}
-
-
-
-
-/*  MOBILE UP */
-
 @media only screen and (min-width: 415px) and (max-width: 1024px) {
   
 
-  .photo1 {
-    height: 500px;
-    width: 100%;
-  }
-
-  .photo2 {
-    height: 500px;
-    width: 100%;
-  }
-
-  .photo3 {
-    height: 500px;
-    width: 100%;
-  }
 
   .text {
     grid-template-columns: 1fr;

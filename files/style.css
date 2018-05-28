@@ -219,12 +219,12 @@ header {
 }
 
 #logotop {
-  height: 40px;
+  height: 4.5vh;
 }
 
 /* Fix for shift on 'project/about' pages */
 #logotopoffset {
-  height: 40px;
+  height: 4.5vh;
   margin-left: -17px;
 }
 
@@ -450,13 +450,27 @@ span.text-content p {
   text-decoration: none;
 }
 
+.aboutsmall a {
+  color: red;
+  text-decoration: none;
+}
+
 .aboutfix {
   margin-right: -2.3em;
 }
 
 /* ==================== MEDIA QUERIES ===================== */
 
-/* Desktop @1024 hover imgs */
+/* Above @1024 */
+
+@media only screen and (min-width: 1024px) {
+
+.aboutsmall {
+    display: none;
+  }
+
+}
+/* Desktop @1024 */
 
 @media only screen and (max-width: 1024px) {
   
@@ -478,6 +492,112 @@ span.text-content p {
 
   .photo3 {
     width: 100%;
+  }
+
+  .itemgrid {
+    grid-template-rows: 10vh auto;
+  }
+
+  .aboutitemgrid {
+    grid-template-rows: 10vh auto auto;
+  }
+
+  #logotop {
+    height: 3vh;
+  }
+
+  /* Fix for shift on 'project/about' pages */
+  #logotopoffset {
+    height: 3vh;
+    margin-left: 0px;
+  }
+
+  .aboutfix {
+    margin-right: -30px;
+  }
+
+  .aboutitemgrid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10vh auto auto auto;
+    grid-template-areas:
+      "header header"
+      "leadp leadp"
+      "leftp leftp"
+      "rightp rightp";
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    margin: 0 auto;
+  }
+
+  .leadtext {
+    width: 80vw; 
+    margin-top: 2vh;
+  }
+
+  .lefttext {
+    width: 80vw;
+    justify-self: center;
+  }
+
+  .leftabouttext {
+    width: 80vw;
+    justify-self: center;
+  }
+
+  .righttext {
+    width: 80vw;
+    justify-self: center;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .aboutsmall {
+  position: relative;
+  font-size: 24px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  
+  /* unRotate Text */
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  filter: none;
+}
+
+}
+
+/* iPad text center */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  { 
+
+  .leadtext {
+    margin-top: 19vh;   /*DEPENDS ON CONTENT*/
+    font-size: 30px;
+  }
+  .lefttext {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .leftabouttext {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .righttext {
+    font-size: 30px;
+    line-height: 30px;
   }
 
 }
@@ -510,6 +630,5 @@ span.text-content p {
   .GF {
     display: none;
   }
-
 
 }
