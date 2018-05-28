@@ -554,31 +554,30 @@ span.text-content p {
   }
 
   .leadtext {
-    width: 80vw; 
+    width: 80%; 
     margin-top: 2vh;
-    line-height: 30px;
+    line-height: 34px;
     font-size: 30px;
-    color: red;
   }
 
   .lefttext {
-    width: 80vw;
+    width: 80%;
     justify-self: center;
-    line-height: 30px;
+    line-height: 34px;
     font-size: 30px;
   }
 
   .leftabouttext {
-    width: 80vw;
+    width: 80%;
     justify-self: center;
-    line-height: 30px;
+    line-height: 34px;
     font-size: 30px;
   }
 
   .righttext {
-    width: 80vw;
+    width: 80%;
     justify-self: center;
-    line-height: 30px;
+    line-height: 34px;
     font-size: 30px;
   }
 
