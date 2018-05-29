@@ -44,24 +44,22 @@ table {
   border-spacing: 0;
 }
 
-*, *:before, *:after {
-    -webkit-user-select: none; /* Chrome/Safari */        
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE10+ */
-}
-
-/* ===================== INDEX.html PAGE ===================== */
+/* ================== HOME PAGE GRID =================== */
 
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 100vh;
+  grid-template-rows: 100vh auto auto;
   grid-template-areas:
-    "main";
+    "hero"
+    "portfolio"
+    "aboutus";
 }
 
-#main {
-  grid-area: main;
+/* ===================== HOME PAGE ===================== */
+
+#hero {
+  grid-area: hero;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -69,7 +67,7 @@ table {
 }
 
 #logo {
-  height: 10vh;
+  height: 5em;
 }
 
 .BF img {
@@ -105,9 +103,15 @@ table {
 /* --- NAV --- */
 
 #nav {
-  position: absolute;
-  top: 2em;
-  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  height:75px; 
+  background-color:#fff;
+  color: #FFFFFF;
+  z-index:9999;
+  display: none;
+  margin:0 auto;
 }
 
 #nav li {
@@ -118,7 +122,34 @@ table {
   font-size: 20px;
   line-height: 30px;
   color: #707070;
-  padding-left: 2.5em;
+  margin-left: 2em;
+}
+
+#nav li span#item1{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#nav li span#item2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 3em;
+}
+
+#nav li span#item3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 5em;
+}
+
+#rightify li {
+  position: absolute;
+  right: 2em;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #nav a {
@@ -129,17 +160,14 @@ table {
   border-bottom: 3px solid #707070;
 }
 
-#aboutus {
+#navlogo {
+  height: 2em;
   position: absolute;
-  top: 2em;
-  right: 4em;
-  font-family: futura-pt, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 24px;
-  color: #707070;
-  width: 13em;
+  margin: 0 auto;
+  left: 0;
+  right: 0; 
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* MOBILE NAV */
@@ -209,35 +237,21 @@ table {
   padding-right: 0.8em;
 }
   
-/* ================== HEADER FOR ALL PAGES =================== */
 
-header {
-  grid-area: header;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#logotop {
-  height: 4.5vh;
-}
-
-/* Fix for shift on 'project/about' pages */
-#logotopoffset {
-  height: 4.5vh;
-  margin-left: -17px;
-}
-
-/* ================== PROJECTS MAIN PAGE =================== */
+/* ================== PROJECTS SECTION =================== */
 
 /* -- PORTFOLIO GALLERY -- */
 
-.gallery li {
-    float: left;
-    position: relative;
+#portfolio {
+  grid-area: portfolio;
 }
 
-.photo1 {
+.gallery li {
+  float: left;
+  position: relative;
+}
+
+.meed {
   background: url(assets/images/MeedLogo.gif);
   background-size: cover;
   background-position: center center;
@@ -245,7 +259,7 @@ header {
   width: 50%;
 }
 
-.photo2 {
+.pride {
   background: url(assets/images/sanfranpridesoap-NEWCOLOURS.jpg);
   background-size: cover;
   background-position: center center;
@@ -253,7 +267,15 @@ header {
   width: 50%;
 }
 
-.photo3 {
+.goa {
+  background: url(assets/images/GS_PORTFOLIO1.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  width: 50%;
+}
+
+.circle {
   background: url(assets/images/GS_PORTFOLIO1.jpg);
   background-size: cover;
   background-position: center center;
@@ -289,378 +311,149 @@ span.text-content p {
   font-size: 14px;
 }
 
-#copyright {
-  position: relative; 
-  width: 100%; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  font-family: futura-pt, sans-serif;
-  padding-top: 4em;
-  padding-bottom: 2em;
-}
+/* ================== ABOUT US SECTION =================== */
 
-/* ============ PROJECT IMAGE PAGES ============ */
-
-/* Grid for both Project Main & Project Image Pages*/
-
-.itemgrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 20vh auto;
-  grid-template-areas:
-    "header"
-    "images";
-}
-
-#images {
-  grid-area: images;
-}
-
-.contentimages{
-  width: 70vw;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 14vh;
-}
-
-.contentimages li:nth-of-type(4) {
-  text-align: center;
-  padding-top: 7vh;
-}
-
-.contentimages img{
-  width: 100%;
-  height: auto;
-}
-
-.projects {
-  font-size: 20px;
-  font-family: futura-pt, sans-serif;
-  line-height: 30px;
-  font-weight: bold;
-  padding-top: 2em;
-  display: flex;
-  justify-content: center;
-}
-
-.projects a {
-  color: red;
-  text-decoration: none;
-}
-
-/* ============ PROJECT ABOUT PAGES ============ */
-
-.aboutitemgrid {
+#aboutus {
+  grid-area: aboutus; 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20vh auto auto;
+  grid-template-rows: auto auto;
   grid-template-areas:
-    "header header"
-    "leadp leadp"
-    "leftp rightp";
+    "leadtext leadtext"
+    "lefttext righttext";
   grid-column-gap: 1em;
   grid-row-gap: 1em;
   margin: 0 auto;
+  font-family: futura-pt, sans-serif;
+  padding-bottom: 25vh;
 }
 
 .leadtext {
-  grid-area: leadp;
+  grid-area: leadtext;
   width: 60vw;
   font-size: 24px;
-  font-family: futura-pt, sans-serif;
   line-height: 30px;
-  justify-self: center;
-  margin-top: 10vh;      /* not centered just a margin atm - align:center?*/
+  margin-top: 25vh;  
 }
 
 .lefttext {
-  grid-area: leftp;
+  grid-area: lefttext;
   width: 30vw;
   font-size: 16px;
-  font-family: futura-pt, sans-serif;
   line-height: 22px;
-  justify-self: right;
 }
 
 .righttext {
-  grid-area: rightp;
+  grid-area: righttext;
   width: 30vw;
   font-size: 16px;
-  font-family: futura-pt, sans-serif;
   line-height: 22px;
-  justify-self: left;
 }
 
-/* for main 'About' page (removed lead <p>)*/
-.maintext {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: auto;
-  grid-template-areas:
-    "leftp rightp";
-  grid-column-gap: 1em;
-  grid-row-gap: 1em;
-  margin: 0 auto;
-}
-
-
-/* ============ TITLE & ABOUT LINKS ============ */
-
-.title {
-  position: absolute;   
-  position: fixed;
-  top: 50%;
-  margin-left: 1em;
-  font-size: 24px;
-  font-family: futura-pt, sans-serif;
-  font-weight: bold;
-  color: red;
- 
-  /* Rotate Text */
-  -webkit-transform: rotate(-90deg);
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-.about {
-  position: absolute;
-  position: fixed;
-  top: 50%;
-  margin-right: -1em;
-  right: 0;
-  font-size: 24px;
-  font-family: futura-pt, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  
-  /* Rotate Text */
-  -webkit-transform: rotate(-270deg);
-  -moz-transform: rotate(-270deg);
-  -ms-transform: rotate(-270deg);
-  -o-transform: rotate(-270deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-.aboutimage {
-  position: absolute;
-  position: fixed;
-  top: 50%;
-  margin-right: -1em;
-  right: 0;
-  font-size: 24px;
-  font-family: futura-pt, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  
-  /* Rotate Text */
-  -webkit-transform: rotate(-270deg);
-  -moz-transform: rotate(-270deg);
-  -ms-transform: rotate(-270deg);
-  -o-transform: rotate(-270deg);
-  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
-
-.about a {
-  color: red;
-  text-decoration: none;
-}
-
-.aboutimage a {
-  color: red;
-  text-decoration: none;
-}
-
-.aboutsmall a {
-  color: red;
-  text-decoration: none;
-}
-
-.aboutfix {
-  margin-right: -2.3em;
-}
 
 /* ==================== MEDIA QUERIES ===================== */
 
-/* Above @1024 */
+/* Tablet */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 375px) and (max-width: 768px){
 
-.aboutsmall {
-    display: none;
-  }
+  /* Home portfolio section */
 
-}
-/* Desktop @1024 */
-
-@media only screen and (max-width: 1024px) {
-  
-  .BF img {
-    left: -2em;
-  }
-
-  .GF img {
-    right: -2.2em;
-  }
-
-  .photo1 {
+  .meed {
     width: 100%;
   }
 
-  .photo2 {
+  .pride {
     width: 100%;
   }
 
-  .photo3 {
+  .goa {
     width: 100%;
   }
 
-  .itemgrid {
-    grid-template-rows: 10vh auto;
+  .circle {
+    width: 100%;
   }
 
-  .aboutitemgrid {
-    grid-template-rows: 10vh auto auto;
-  }
+  /* Home about section */
 
-  #logotop {
-    height: 3vh;
-  }
-
-  /* Fix for shift on 'project/about' pages */
-  #logotopoffset {
-    height: 3vh;
-    margin-left: 0px;
-  }
-
-  .aboutfix {
-    margin-right: -30px;
-  }
-
-  .aboutitemgrid {
-    grid-template-columns: 1fr;
-    grid-template-rows: 10vh auto auto auto;
-    grid-template-areas:
-      "header"
-      "leadp"
-      "leftp"
-      "rightp";
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;
-    margin: 0 auto;
-  }
-
-  .leadtext {
-    width: 75%; 
-    margin-top: 2vh;
-    line-height: 40px;
-    font-size: 40px;
-  }
-
-  .lefttext {
-    width: 75%;
-    justify-self: center;
-    line-height: 40px;
-    font-size: 40px;
-  }
-
-  .leftabouttext {
-    width: 75%;
-    justify-self: center;
-    line-height: 40px;
-    font-size: 40px;
-  }
-
-  .righttext {
-    width: 75%;
-    justify-self: center;
-    line-height: 40px;
-    font-size: 40px;
-  }
-
-  .about {
-    display: none;
-  }
-
-  .aboutsmall {
-  position: relative;
-  font-size: 24px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  font-family: futura-pt, sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  
-  /* unRotate Text */
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  filter: none;
-}
-
-}
-
-/* iPad text center */
-
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px)  { 
-
-  .leadtext {
-    margin-top: 19vh;   /*DEPENDS ON CONTENT*/
-    font-size: 30px;
-  }
-  .lefttext {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
-  .leftabouttext {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
-  .righttext {
-    font-size: 30px;
-    line-height: 30px;
-  }
-
-}
-
-/* Switch to Mobile Menu */
-
-@media only screen and (min-width: 769px) {
-
-  #mobilenav {
-    display: none;
-  }
-}
-
-/*  TABLET  */
-
-@media only screen and (max-width: 768px) {
-  
-  #nav {
-    display: none;
-  }
-  
   #aboutus {
-    display: none;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "leadtext"
+      "lefttext" 
+      "righttext";
   }
 
-  .BF {
-    display: none;
+  .leadtext {
+    width: 80vw;
   }
 
-  .GF {
-    display: none;
+  .lefttext {
+    width: 80vw;
+  }
+
+  .righttext {
+    width: 80vw;
   }
 
 }
+
+/* Mobile */
+
+@media only screen and (min-width: 0px) and (max-width: 375px){
+
+  /* Home portfolio section */
+
+  .meed {
+    width: 100%;
+  }
+
+  .pride {
+    width: 100%;
+  }
+
+  .goa {
+    width: 100%;
+  }
+
+  .circle {
+    width: 100%;
+  }
+
+  /* Home about section */
+
+  #aboutus {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "leadtext"
+      "lefttext" 
+      "righttext";
+  }
+
+  .leadtext {
+    width: 80vw;
+  }
+
+  .lefttext {
+    width: 80vw;
+  }
+
+  .righttext {
+    width: 80vw;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+

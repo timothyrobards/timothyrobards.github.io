@@ -11,7 +11,6 @@
 
 	<!-- FONTS -->
 	<link rel="stylesheet" href="https://use.typekit.net/rtm2dtx.css">
-	<link rel="stylesheet" href="fonts.css">
 
 	<!-- Smooth Scroll -->
     <script src="assets/js/smoothscroll.js"></script>
@@ -32,31 +31,36 @@
 	
 <div class="container">
 	
-  <section id="main">
+  <section id="hero">
   	
 	<!-- Nav -->
 
 	<div id="nav">
 	  <ul>
-	    <a href="projects.html"><li><span>projects</span></li></a>
-		<a href="about.html"><li><span>about</span></li></a>
-	  	<a href="mailto:hello@atelierbfgf.com"><li><span>hello@atelierbfgf.com</span></li></a>
+	    <a href="index.html#portfolio"><li><span id="item1">portfolio</span></li></a>
+		<a href="index.html#aboutus"><li><span id="item2">about</span></li></a>
+		<a href="#"><li><span id="item3">services</span></li></a>
+	  	<a href="mailto:hello@atelierbfgf.com" id="rightify"><li><span>hello@atelierbfgf.com</span><li></a>
 	  </ul>
+
+	  <img src="assets/images/BGFG-logo.png" id="navlogo" alt="BFGF Logo">
+
 	</div>
 
 	<!-- Mobile Nav -->
 
   	
-  	  <div id="myNav" class="overlay">
-	    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 	  
-	    <div class="overlay-content">
-	  	<a href="projects.html" onclick="closeNav()">projects</a>
-	  	<a href="about.html" onclick="closeNav()">about</a>
+	  <div class="overlay-content">
+	    <a href="index.html#aboutus" onclick="closeNav()">about</a>
+     	<a href="index.html#portfolio" onclick="closeNav()">portfolio</a>
+	  	<a href="about.html" onclick="closeNav()">services</a>
 	  	<a href="mailto:hello@atelierbfgf.com" id="email" onclick="closeNav()">hello@atelierbfgf.com</a>
-	    </div>
-
 	  </div>
+
+	</div>
 
     <div id="mobilenav"> 
 
@@ -64,8 +68,7 @@
 
 	</div>
 
-
-	<!-- Content -->
+	<!-- Hero Content -->
 
 	<div class="BF">
         <img src="assets/images/BF-White.svg" />
@@ -79,11 +82,73 @@
         <img src="assets/images/GF-Black.svg" />
     </div>
 
-  	<p id="aboutus">montreal based studio creating stuff for web and other stuff too. we're cool cats who will work hard for you.</p>
+  </section>
+
+  <!-- Portfolio Section -->
+
+  <section id="portfolio">
+  	
+	<ul class="gallery">
+
+      <a href="meed.html"> 
+      <li class="meed"> 
+        <span class="text-content"><h2>MEED</h2><p>Identity - UX/UI</p></span>
+      </li>
+      </a>
+
+      <a href="pride.html"> 
+      <li class="pride"> 
+        <span class="text-content"><h2>SAN FRANCISCO PRIDE SOAP</h2><p>Identity - UX/UI</p></span>
+      </li>
+      </a>
+
+      <a href="goldensands.html"> 
+      <li class="goa"> 
+        <span class="text-content"><h2>GOLDEN SANDS</h2><p>Identity - UX/UI</p></span>
+      </li>
+      </a>      
+
+      <a href="circle.html"> 
+      <li class="circle"> 
+        <span class="text-content"><h2>CIRCLE</h2><p>Identity - UX/UI</p></span>
+      </li>
+      </a>  
+
+    </ul>
+
+  </section>
+
+  <!-- About Us Section -->
+
+  <section id="aboutus">
+	
+      <p class="leadtext">Let's build an almighty mountain. With something so strong, a little bit can go a long way. Pretend you're water. Just floating without any effort. Having a good day. The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe. Have fun with it.</p>
+
+      <p class="lefttext">If we're going to have animals around we all have to be concerned about them and take care of them. We might as well make some Almighty mountains today as well, what the heck. This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. It looks so good, I might as well not stop. Let your imagination be your guide.</p>
+
+      <p class="righttext">Now we can begin working on lots of happy little things. When you do it your way you can go anywhere you choose. Just let your mind wander and enjoy. This should make you happy. If you've been in Alaska less than a year you're a Cheechako. If you don't like it - change it. It's your world. Now it's beginning to make a little sense.</p>
 
   </section>
 
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- NAV jQuery -->
+
+<script type="text/javascript">
+(function($) {          
+    $(document).ready(function(){                    
+        $(window).scroll(function(){                          
+            if ($(this).scrollTop() > 85 * window.innerHeight/100) {
+                $('#nav').fadeIn(500);
+            } else {
+                $('#nav').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+</script>
 
 </body>
 </html>
