@@ -109,7 +109,7 @@ table {
   height:75px; 
   background-color:#fff;
   color: #FFFFFF;
-  z-index:9999;
+  z-index: 10;
   display: none;
   margin:0 auto;
 }
@@ -176,7 +176,7 @@ table {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 2;
+  z-index: 11;
   top: 0;
   left: 0;
   background-color: #fff;
@@ -224,12 +224,14 @@ table {
   right: 0.1em;
   font-size: 3.750em;
   text-decoration: none !important;
+  z-index: 12;
 }
 
 #burger {
   position: absolute;
-  top: 1em;
-  right: 0;
+  right: 0; 
+  top: 50%;
+  transform: translateY(-50%);
   font-size: 1.938em;
   cursor: pointer;
   color: #000;
@@ -353,9 +355,34 @@ span.text-content p {
 
 /* ==================== MEDIA QUERIES ===================== */
 
+
+/* Desktop */
+
+@media only screen and (min-width: 768px){
+
+  #mobilenav {
+    display: none;
+  }
+
+}
+
 /* Tablet */
 
 @media only screen and (min-width: 375px) and (max-width: 768px){
+  
+  .BF {
+    display: none;
+  }
+
+  .GF {
+    display: none;
+  }
+  
+  /* Nav */
+
+  #nav ul {
+    display: none;
+  }
 
   /* Home portfolio section */
 
@@ -404,6 +431,18 @@ span.text-content p {
 
 @media only screen and (min-width: 0px) and (max-width: 375px){
 
+  .BF {
+    display: none;
+  }
+
+  .GF {
+    display: none;
+  }
+  
+  /* Nav */
+
+
+
   /* Home portfolio section */
 
   .meed {
@@ -444,7 +483,7 @@ span.text-content p {
   .righttext {
     width: 80vw;
   }
-  
+
 }
 
 
