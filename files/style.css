@@ -220,7 +220,7 @@ table {
 
 .overlay .closebtn {
   position: absolute;
-  top: -0.05em;
+  top: -0.1em;
   right: 0.1em;
   font-size: 3.750em;
   text-decoration: none !important;
@@ -352,6 +352,178 @@ span.text-content p {
   line-height: 22px;
 }
 
+/* ============ PROJECT IMAGE PAGES ============ */
+
+.itemgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "header"
+    "images";
+}
+
+/* --- PROJECT PAGES NAV --- */
+
+#projectnav {
+  grid-area: header;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  height:75px; 
+  background-color:#fff;
+  color: #FFFFFF;
+  z-index: 10;
+  margin:0 auto;
+}
+
+#projectnav li {
+  display: inline;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #707070;
+  margin-left: 2em;
+}
+
+#projectnav li span#item1{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#projectnav li span#item2{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 3em;
+}
+
+#projectnav li span#item3{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 5em;
+}
+
+#projectnav a {
+  text-decoration: none;
+}
+
+#projectnav li span:hover {
+  border-bottom: 3px solid #707070;
+}
+/* ..END of Project Pages nav */
+
+#images {
+  grid-area: images;
+  padding-top: 18vh;
+}
+
+.contentimages{
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 14vh;
+}
+
+.contentimages img{
+  width: 100%;
+  height: auto;
+}
+
+.projects {
+  font-size: 20px;
+  font-family: futura-pt, sans-serif;
+  line-height: 30px;
+  font-weight: bold;
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.projects a {
+  color: red;
+  text-decoration: none;
+}
+
+/* ============ TITLE & ABOUT LINKS ============ */
+
+.title {
+  position: absolute;   
+  position: fixed;
+  top: 50%;
+  margin-left: 1em;
+  font-size: 20px;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  color: #FF0000;
+  /* Rotate Text */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.about {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  margin-right: -1em;
+  right: 0;
+  font-size: 20px;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  /* Rotate Text */
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.about a {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+.titletop {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  margin-left: 3em;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.titletop a {
+  color: #FF0000;
+  text-decoration: none;
+}
+
+.abouttop {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  margin-right: 3em;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.abouttop a {
+  color: #FF0000;
+  text-decoration: none;
+}
 
 /* ==================== MEDIA QUERIES ===================== */
 
@@ -361,6 +533,14 @@ span.text-content p {
 @media only screen and (min-width: 768px){
 
   #mobilenav {
+    display: none;
+  }
+
+  .titletop {
+    display: none;
+  }
+
+  .abouttop {
     display: none;
   }
 
@@ -381,6 +561,10 @@ span.text-content p {
   /* Nav */
 
   #nav ul {
+    display: none;
+  }
+
+  #projectnav ul {
     display: none;
   }
 
@@ -425,6 +609,28 @@ span.text-content p {
     width: 80vw;
   }
 
+  /* Portfolio item image page */
+
+  .projects {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+  #images {
+    padding-top: 22vh;
+  }
+  .contentimages{
+    width: 100%;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
 }
 
 /* Mobile */

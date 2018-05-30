@@ -10,19 +10,66 @@
   <!-- FONTS -->
   <link rel="stylesheet" href="https://use.typekit.net/rtm2dtx.css">
 
+  <!-- Smooth Scroll -->
+  <script src="assets/js/smoothscroll.js"></script>
+
+  <!-- Overlay Transition -->
+  <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
 </head>
 <body>
   
 <span class="title">MEED</span>
-<span class="aboutimage aboutfix"><a href="aboutmeed.html">about the project</span></a>
+<span class="about"><a href="aboutmeed.html">about the project</span></a>
 
 <div class="itemgrid">
 
-  <header>
+  <section id="header">
     
-    <a href="index.html"><img src="assets/images/BGFG-logo.png" id="logotop" alt="BFGF Logo"></a>
+  <span class="titletop"><a href="http://meedpayroll.ca">meedpayroll.ca</span></a>
+  <span class="abouttop"><a href="aboutmeed.html">about the project</span></a>
   
-  </header>
+  <!-- Nav -->
+
+  <div id="projectnav">
+    <ul>
+      <a href="index.html#portfolio"><li><span id="item1">portfolio</span></li></a>
+      <a href="index.html#aboutus"><li><span id="item2">about</span></li></a>
+      <a href="#"><li><span id="item3">services</span></li></a>
+      <a href="mailto:hello@atelierbfgf.com" id="rightify"><li><span>hello@atelierbfgf.com</span><li></a>
+    </ul>
+
+    <a href="index.html"><img src="assets/images/BGFG-logo.png" id="navlogo" alt="BFGF Logo"></a>
+
+    <div id="mobilenav"> 
+      <span id="burger" onclick="openNav()">&#9776;</span>
+      </div>
+
+  </div>
+
+  <!-- Mobile Nav -->
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+      <div class="overlay-content">
+        <a href="index.html#aboutus" onclick="closeNav()">about</a>
+        <a href="index.html#portfolio" onclick="closeNav()">portfolio</a>
+        <a href="about.html" onclick="closeNav()">services</a>
+        <a href="mailto:hello@atelierbfgf.com" id="email" onclick="closeNav()">hello@atelierbfgf.com</a>
+      </div>
+
+    </div>
+
+  </section>
     
   <section id="images">
 
@@ -35,7 +82,7 @@
         <li><img src="assets/images/WP PORTFOLIO – 6.jpg" alt="meed"></li>
         <li><img src="assets/images/WP PORTFOLIO – 7.jpg" alt="meed"></li>
         <li><img src="assets/images/WP-PORTFOLIO-web.jpg" alt="meed"></li>
-        <li><span class="projects"><a href="projects.html">back to projects</a></span></li>
+        <li><span class="projects"><a href="index.html#portfolio">back to projects</a></span></li>
       </ul>
     </div>
 
