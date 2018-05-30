@@ -184,6 +184,7 @@ table {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+  font-family: futura-pt, sans-serif;
 }
 
 .overlay-content {
@@ -194,6 +195,7 @@ table {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  font-family: futura-pt, sans-serif;
 }
 
 .overlay a {
@@ -211,11 +213,13 @@ table {
 .overlay a#email {
   font-size: 1.250em;
   margin-top: 0.75em;
+  font-family: futura-pt, sans-serif;
 }
 
 .overlay a:hover, .overlay a:focus {
   color: #000;
   text-decoration: underline;
+  font-family: futura-pt, sans-serif;
 }
 
 .overlay .closebtn {
