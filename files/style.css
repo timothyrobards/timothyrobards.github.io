@@ -449,6 +449,31 @@ span.text-content p {
   text-decoration: none;
 }
 
+/* ============ PROJECT ABOUT PAGES ============ */
+
+.aboutitemgrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "header"
+    "aboutcontent";
+}
+
+#content {
+  grid-area: aboutcontent;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "leadtext leadtext"
+    "lefttext righttext";
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  margin: 0 auto;
+  font-family: futura-pt, sans-serif;
+}
+
 /* ============ TITLE & ABOUT LINKS ============ */
 
 .title {
@@ -456,6 +481,23 @@ span.text-content p {
   position: fixed;
   top: 50%;
   margin-left: 1em;
+  font-size: 20px;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  color: #FF0000;
+  /* Rotate Text */
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.abouttitle {
+  position: absolute;   
+  position: fixed;
+  top: 50%;
+  margin-left: 0.5em;
   font-size: 20px;
   font-family: futura-pt, sans-serif;
   font-weight: bold;
@@ -530,7 +572,7 @@ span.text-content p {
 
 /* Desktop */
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 769px){
 
   #mobilenav {
     display: none;
@@ -543,7 +585,10 @@ span.text-content p {
   .abouttop {
     display: none;
   }
-
+  
+  .projects {
+    display: none;
+  }  
 }
 
 /* Tablet */
@@ -616,10 +661,10 @@ span.text-content p {
     line-height: 20px;
   }
 
-
   #images {
     padding-top: 22vh;
   }
+
   .contentimages{
     width: 100%;
   }
@@ -631,11 +676,46 @@ span.text-content p {
   .about {
     display: none;
   }
+
+  /* Portfolio item about page */
+
+  #content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "leadtext"
+      "lefttext" 
+      "righttext";
+  }
+
+  .leadtext {
+    width: 70vw;
+    margin-top: 18vh;
+  }
+
+  .lefttext {
+    width: 70vw;
+  }
+
+  .righttext {
+    width: 70vw;
+  }
+
+  .projects {
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+
+  .abouttitle {
+    font-size: 16px;
+    margin-left: 0em; 
+  }
+
 }
 
 /* Mobile */
 
-@media only screen and (min-width: 0px) and (max-width: 375px){
+@media only screen and (min-width: 0px) and (max-width: 375px) {
 
   .BF {
     display: none;
@@ -647,7 +727,13 @@ span.text-content p {
   
   /* Nav */
 
+  #nav ul {
+    display: none;
+  }
 
+  #projectnav ul {
+    display: none;
+  }
 
   /* Home portfolio section */
 
@@ -688,6 +774,84 @@ span.text-content p {
 
   .righttext {
     width: 80vw;
+  }
+
+  /* Portfolio item image page */
+
+  .projects {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  #images {
+    padding-top: 22vh;
+  }
+
+  .contentimages {
+    width: 100%;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .about {
+    display: none;
+  }
+
+  .titletop {
+    margin-left: 2em;
+  }
+
+  .abouttop {
+    margin-right: 2em;
+  }
+
+  /* Portfolio item about page */
+
+  #content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "leadtext"
+      "lefttext" 
+      "righttext";
+  }
+
+  .leadtext {
+    width: 75vw;
+    margin-top: 18vh;
+  }
+
+  .lefttext {
+    width: 75vw;
+  }
+
+  .righttext {
+    width: 75vw;
+  }
+
+  .projects {
+    margin-top: 1em;
+    margin-bottom: 4em;
+  }
+
+  .abouttitle {
+    font-size: 16px;
+    margin-left: 0em; 
+  }
+
+}
+
+/* Mobile iPhone5 Landscape (to shrink nav) */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) { 
+
+  #projectnav {
+    height: 50px;
   }
 
 }
