@@ -44,6 +44,12 @@ table {
   border-spacing: 0;
 }
 
+/* Autohide scrollbar in IE/Edge */
+
+body {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
 /* ================== HOME PAGE GRID =================== */
 
 .container {
@@ -105,7 +111,8 @@ table {
 #nav {
   position: fixed;
   top: 0;
-  width: 100%; 
+  left: 0;
+  width: 100vw; 
   height:75px; 
   background-color:#fff;
   color: #FFFFFF;
@@ -590,9 +597,6 @@ span.text-content p {
     display: none;
   }
   
-  .projects {
-    display: none;
-  }  
 }
 
 /* Tablet */
