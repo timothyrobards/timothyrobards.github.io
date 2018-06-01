@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Project: Tattoo Cards</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- FONTS -->
+  <link rel="stylesheet" href="https://use.typekit.net/rtm2dtx.css">
+
+  <!-- Smooth Scroll -->
+  <script src="assets/js/smoothscroll.js"></script>
+
+  <!-- Overlay Transition -->
+  <script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+  </script>
+
+</head>
+<body>
+  
+<span class="abouttitle">tattoos</span>
+<span class="about"><a href="tattoos.html">back to project</span></a>
+
+<div class="aboutitemgrid">
+
+   <section id="header">
+  
+  <!-- Nav -->
+
+  <div id="nav">
+    <ul>
+      <a href="index.html#portfolio"><li><span id="item1">portfolio</span></li></a>
+      <a href="index.html#aboutus"><li><span id="item2">about</span></li></a>
+      <!-- <a href="#"><li><span id="item3">services</span></li></a> -->
+      <a href="mailto:lister.tiffany@gmail.com" id="rightify"><li><span>lister.tiffany@gmail.com</span><li></a>
+    </ul>
+
+    <a href="index.html"><img src="assets/images/GF-Black.svg" id="navlogo" alt="BFGF Logo"></a>
+
+    <div id="mobilenav"> 
+      <span id="burger" onclick="openNav()">&#9776;</span>
+      </div>
+
+  </div>
+
+  <!-- Mobile Nav -->
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+      <div class="overlay-content">
+        <a href="index.html#aboutus" onclick="closeNav()">about</a>
+        <a href="index.html#portfolio" onclick="closeNav()">portfolio</a>
+        <!-- <a href="about.html" onclick="closeNav()">services</a> -->
+        <a href="mailto:lister.tiffany@gmail.com" id="email" onclick="closeNav()">lister.tiffany@gmail.com</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="content">
+  
+    <p class="leadtext">Business cards are the main way tattoo artists market themselves at conventions. They are also given out at every appointment. The two artists that I created an identity and business cards for were looking for something that reflected their own individual style. Curt's style is very minimalist, and Tom's very graffiti inspired. I chose a square size as it is more modern and would stand out amongst other cards at a convention. </p>
+    <!--
+    <p class="lefttext"><a href="https://www.instagram.com/tommy_oh/">@tommy_oh</a></p>
+    <p class="righttext"><a href="https://www.instagram.com/curtmontgomerytattoos/">@curtmontgomerytattoos</a></p>
+-->
+
+  </section>
+
+</div>
+
+    <span class="mobileprojects"><a href="tattoos.html">back to project</span></a>
+    
+</body>
+</html>
