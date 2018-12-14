@@ -14,10 +14,15 @@
   font-size: inherit;
 }
 
+.container .landing-content .animated .fadeIn{
+  z-index: 2000;
+}
+
 /* Nav */
 
 nav ul a {
   padding: 0 25px;
+  color: #2d2d2d !important;
 }
 
 nav ul li a:hover {
@@ -73,34 +78,41 @@ nav.transparent {
 
 /* Landing Page */
 
+/*
 .landing {
   background: #29ABE2;
-  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4F00BC, #29ABE2);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right bottom, left top, from(#4F00BC), to(#29ABE2));
   background: -webkit-linear-gradient(right bottom, #4F00BC, #29ABE2);
   background: -o-linear-gradient(right bottom, #4F00BC, #29ABE2);
   background: linear-gradient(to left top, #4F00BC, #29ABE2);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+} */
+
+.landing {
+  background: hsla(0,0%,100%,1);
   height: 100vh;
 }
 
+.landing i {
+  color: #2d2d2d;
+}
+
 .landing-content a {
-  color: #fff;
+  color: #2d2d2d;
   text-decoration: underline;
 }
 
 .landing-content h1 {
   font-size: calc(2.5em + 2.2vw);
-  color: #fff;
+  color: #2d2d2d !important;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 .landing-content p {
-  color: #fff;
+  color: #2d2d2d !important;
   font-size: calc(0.9em + 0.6vw);
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -119,18 +131,14 @@ nav.transparent {
   justify-content: center;
   width: 50%;
   margin: auto;
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 .social-links i {
-  color: #fff;
-  font-size: calc(1.8em + 1.5vw);
+  color: #2d2d2d;
+  font-size: calc(1.2em + 1vw);
   padding-left: 0.5em;
   padding-right: 0.5em;
-}
-
-.social-links i:hover {
-  color: #00f9ff;
 }
 
 /* About Page */
@@ -140,11 +148,11 @@ nav.transparent {
 }
 
 .about nav ul a span {
-  color: #4F00BC;
+  color: #2d2d2d;
 }
 
 .about i {
-  color: #4F00BC;
+  color: #2d2d2d;
 }
 
 .about img {
@@ -180,26 +188,38 @@ nav.transparent {
 /* Projects Page */
 
 .projects nav ul a span {
-  color: #4F00BC;
+  color: #2d2d2d;
 }
 
 .projects i {
-  color: #4F00BC;
+  color: #2d2d2d;
 }
 
 .w60 {
   width: 60%;
+  margin-top: 1em;
 }
 
 .w90 {
   margin: 0 auto;
-  max-width: 1280px;
-  width: 90%;
+  width: 97%;
   padding-top: 5em;
 }
 
 .active {
   border-bottom: none;
+}
+
+.tabs .tab a, .tabs .tab a:hover, .tabs .tab a.active, .tabs .tab a.active:hover {
+  color: #2d2d2d;
+}
+
+.tabs .indicator {
+  background-color: #2d2d2d;
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background-color: #fff;
 }
 
 .card {
@@ -229,11 +249,11 @@ nav.transparent {
 /* Resume Page */
 
 .resume nav ul a span {
-  color: #4F00BC;
+  color: #2d2d2d;
 }
 
 .resume i {
-  color: #4F00BC;
+  color: #2d2d2d;
 }
 
 .resume-frame {
@@ -244,7 +264,7 @@ nav.transparent {
 
 /* Mobile Breakpoint */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
 
   .nav-wrapper {
     max-width: 100%;
@@ -267,16 +287,32 @@ nav.transparent {
     color: rgba(0, 0, 0, 0.87);
   }
 
+  .social-icons-about i:nth-of-type(1) {
+    padding-left: 0.75em;
+  }
+
   #remove {
     display: none;
   }
 
   .w60 {
     width: 100%;
+    margin-top: 0;
   }
 
   .w90 {
     width: 100%;
+  }
+
+  .about img {
+    margin-top: 200px;
+  }
+}
+
+/* resize window */
+@media screen and (min-width: 994px) {
+  .about img {
+    margin-top: 20px;
   }
 }
 
@@ -296,7 +332,6 @@ nav.transparent {
 
   .about img {
     width: 200px;
-    margin-top: 250px;
   }
 }
 
@@ -314,7 +349,6 @@ nav.transparent {
 
   .about img {
     width: 200px;
-    margin-top: 185px;
     margin-bottom: 0;
   }
 }
@@ -333,7 +367,6 @@ nav.transparent {
 
   .about img {
     width: 250px;
-    margin-top: 150px;
   }
 }
 
@@ -351,7 +384,6 @@ nav.transparent {
 
   .about img {
     width: 200px;
-    margin-top: 200px;
   }
 }
 
@@ -364,7 +396,6 @@ nav.transparent {
 
   .about img {
     width: 250px;
-    margin-top: 100px;
   }
 }
 
@@ -382,7 +413,6 @@ nav.transparent {
 
   .about img {
     width: 200px;
-    margin-top: 170px;
     margin-bottom: 0;
   }
 }
@@ -403,7 +433,7 @@ nav.transparent {
 
   .about img {
     width: 200px;
-    margin-top: 285px;
+    margin-top: 250px;
     margin-bottom: 0;
   }
 }
@@ -412,7 +442,6 @@ nav.transparent {
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) and (-webkit-device-pixel-ratio : 3) and (orientation : portrait) {
   .about img {
     width: 300px;
-    margin-top: 150px;
   }
 }
 
@@ -421,7 +450,10 @@ nav.transparent {
   .about-content {
     width: 55%;
   }
-}
+
+  .about img {
+    margin-top: 20px;
+  }
 
 /* iPad Pro portrait & landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -438,5 +470,9 @@ nav.transparent {
 @media only screen and (max-height: 360px) and (max-width: 640px) and (orientation:landscape) {
   .landing-content h1 {
     font-size: 30px;
+  }
+
+  .about img {
+    margin-top: 250px;
   }
 }
