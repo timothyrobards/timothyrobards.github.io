@@ -14,16 +14,8 @@
   font-size: inherit;
 }
 
-.content .content--canvas {
-  z-index: -2000;
-}
-
-.canvas{
-  z-index: -2000;
-}
-
-.canvas.b {
-  z-index: -2000;
+.container .landing-content .animated .fadeIn{
+  -webkit-transform: translate3d(0,0,0);
 }
 
 /* Nav */
