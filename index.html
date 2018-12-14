@@ -17,8 +17,14 @@
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">  
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+  <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this in a modern browser that supports CSS Variables!");</script>
+
 </head>
 <body class="landing">
+
+<!-- Canvas div -->
+<div class="content content--canvas"></div> <!-- kill this div if edge -->
+
 <nav class="transparent" role=" navigation">
     <div class="nav-wrapper container">
       <ul class="right hide-on-med-and-down">
@@ -49,11 +55,12 @@
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner"></div>
+
     <div class="container landing-content animated fadeIn">
       <br><br>
       <h1 class="header center white-text">Hello! I'm Timothy Robards</h1>
       <div class="row center">
-        <p class="header col s12 white-text">I'm a Montreal-based Aussie, Front-End Web Developer and UI/UX enthusiast</p>
+        <p class="header col s12 white-text">I'm a Front-End Web Developer and UI/UX enthusiast</p>
         <p class="col s12 white-text">Check out some of my <a href="projects.html">projects</a></p>
         <p class="col s12 white-text">Contact me <a href="mailto:timothyrobards@gmail.com">timothyrobards@gmail.com</a></p>
       </div>
@@ -83,10 +90,20 @@
     </div>
   </div>
 
-  <!--  Scripts-->
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
+
+  <!-- Canvas js -->
+  <script src="js/noise.min.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/pipeline.js"></script>
+
+  <!-- Just so things don't get a little too crazy!! 
+  <script type="text/javascript">
+    setInterval('window.location.reload()', 60000);
+  </script> -->
 
   </body>
 </html>
