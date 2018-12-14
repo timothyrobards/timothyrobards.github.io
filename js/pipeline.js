@@ -1,4 +1,4 @@
-
+'use strict';
 
 const pipeCount = 20;
 const pipePropCount = 8;
@@ -125,8 +125,7 @@ function createCanvas() {
     left: 0;
     width: 100%;
     height: 100%;
-    display: block;
-    z-index: -9999;
+    z-index: -1000;
   `;
   container.appendChild(canvas.b);
   ctx = {
