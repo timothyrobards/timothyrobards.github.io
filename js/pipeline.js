@@ -179,6 +179,3 @@ function draw() {
 
 window.addEventListener('load', setup);
 window.addEventListener('resize', resize);
-
-// setInterval('window.location.reload()', 60000);
-clearInterval('window.location.reload()');
