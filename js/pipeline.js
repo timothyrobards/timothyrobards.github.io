@@ -1,4 +1,3 @@
-'use strict';
 
 const pipeCount = 20;
 const pipePropCount = 8;
