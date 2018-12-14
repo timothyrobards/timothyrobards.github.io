@@ -1,6 +1,6 @@
 'use strict';
 
-const pipeCount = 50;
+const pipeCount = 20;
 const pipePropCount = 8;
 const pipePropsLength = pipeCount * pipePropCount;
 const turnCount = 8;
