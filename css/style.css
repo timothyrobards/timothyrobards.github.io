@@ -14,8 +14,8 @@
   font-size: inherit;
 }
 
-.container .landing-content .animated .fadeIn{
-  z-index: 2000;
+.content .content--canvas {
+  z-index: -2000;
 }
 
 /* Nav */
