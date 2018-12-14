@@ -275,6 +275,14 @@ nav.transparent {
     width: 75%;
   }
 
+  .landing-content h1 {
+    font-weight: 800;
+  }
+
+  .landing-content p {
+    font-weight: 800;
+  }
+
   .social-icons-about {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
