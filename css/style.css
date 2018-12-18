@@ -283,6 +283,7 @@ nav.transparent {
 
   .landing-content {
     width: 75%;
+    top: 50%;
   }
 
   .landing-content h1 {
