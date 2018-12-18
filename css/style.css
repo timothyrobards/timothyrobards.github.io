@@ -1,10 +1,4 @@
 /* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
 
 .icon-block {
   padding: 0 15px;
@@ -13,6 +7,8 @@
 .icon-block .material-icons {
   font-size: inherit;
 }
+
+/* displays over canvas on safari if use strict disabled */
 
 .content.content--canvas canvas{
   position: fixed;
@@ -96,11 +92,20 @@ nav.transparent {
 
 .landing {
   background: hsla(0,0%,100%,1);
-  height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .landing i {
   color: #2d2d2d;
+}
+
+.landing-content {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+          transform: translate3d(-50%,-50%,0);
 }
 
 .landing-content a {
@@ -354,6 +359,10 @@ nav.transparent {
     display: none;
   }
 
+  .landing-content {
+    top: 50%;
+  }
+
   .landing-content h1 {
     margin: 0;
     font-size: 40px;
@@ -389,6 +398,10 @@ nav.transparent {
     display: none;
   }
 
+  .landing-content {
+    top: 50%;
+  }
+
   .landing-content h1 {
     margin: 0;
     font-size: 40px;
@@ -418,6 +431,10 @@ nav.transparent {
     display: none;
   }
 
+  .landing-content {
+    top: 50%;
+  }
+
   .landing-content h1 {
     margin: 0;
     font-size: 40px;
@@ -432,6 +449,10 @@ nav.transparent {
 
 /* iPhone 5 & 5S in landscape */
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation : landscape) {
+  .landing-content {
+    top: 50%;
+  }
+
   .landing-content h1 {
     font-size: 30px;
     padding-bottom: 15px;
@@ -471,7 +492,7 @@ nav.transparent {
 /* iPad Pro portrait & landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .landing-content {
-    margin-top: 10%;
+    top: 45%;
   }
 
   .about-content {
@@ -481,6 +502,10 @@ nav.transparent {
 
 /* Galaxy s5 landscape*/
 @media only screen and (max-height: 360px) and (max-width: 640px) and (orientation:landscape) {
+  .landing-content {
+    top: 50%;
+  }
+
   .landing-content h1 {
     font-size: 30px;
   }
