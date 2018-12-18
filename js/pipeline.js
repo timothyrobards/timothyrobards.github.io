@@ -1,4 +1,8 @@
-//'use strict';
+// commenting out use strict will display the canvas on safari but its too intense with retina.
+'use strict';
+
+// Refresh after 2 mins
+setInterval('window.location.reload()', 120000);
 
 const pipeCount = 20;
 const pipePropCount = 8;
