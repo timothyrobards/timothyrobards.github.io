@@ -325,7 +325,11 @@ nav.transparent {
   .about img {
     margin-top: 200px;
   }
-}
+  
+  /* kill canvas at mobile */
+  .content.content--canvas canvas{
+    display: none;
+  }
 
 /* resize window */
 @media screen and (min-width: 994px) {
