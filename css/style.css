@@ -493,6 +493,7 @@ nav.transparent {
   .about img {
     margin-top: 20px;
   }
+}
 
 /* iPad Pro portrait & landscape */
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
