@@ -30,7 +30,7 @@ function setup() {
   resize();
   initPipes();
   draw();
-  // setTimeout(setup, 120000);    // 2 min refresh
+  setTimeout(setup, 120000);    // 2 min refresh
 }
 
 function initPipes() {
