@@ -1,6 +1,7 @@
 // commenting out use strict will display the canvas on safari but its too intense with retina.
 'use strict';
 
+
 const pipeCount = 20;
 const pipePropCount = 8;
 const pipePropsLength = pipeCount * pipePropCount;
@@ -29,7 +30,7 @@ function setup() {
   resize();
   initPipes();
   draw();
-  setInterval(setup, 120000);    // Refresh animation after 2 mins
+  setTimeout(setup, 120000);    // 2 min refresh
 }
 
 function initPipes() {
