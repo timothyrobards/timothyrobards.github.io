@@ -191,7 +191,7 @@ nav.transparent {
 }
 
 .social-icons-about i {
-  padding-right: 0.75em;
+  padding-right: 0.5em;
   color: rgba(0, 0, 0, 0.87);
 }
 
@@ -302,12 +302,12 @@ nav.transparent {
   }
 
   .social-icons-about i {
-    padding-right: 0.75em;
+    padding-right: 0.5em;
     color: rgba(0, 0, 0, 0.87);
   }
 
   .social-icons-about i:nth-of-type(1) {
-    padding-left: 0.75em;
+    padding-left: 0.5em;
   }
 
   #remove {
