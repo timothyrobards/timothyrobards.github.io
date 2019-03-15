@@ -1,0 +1,58 @@
+*, *:after, *:before {
+  -moz-box-sizing:border-box; 
+   box-sizing:border-box;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden
+}
+
+/* glitch elem must have absolute position */
+ .glitch-img {
+    position: absolute;
+    top: calc(-1 * 5px);
+    left: calc(-1 * 10px);
+    width: calc(100% + 10px * 2);
+    height: calc(100% + 5px * 2);
+    background: url("gamers-tournament.jpg") no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+ } 
+
+.logobox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+#h4x-logo {
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);*/
+    height: 12em;
+    width: 12em;
+    z-index: 100;
+    transition: all 1s;
+}
+
+@media only screen and (max-device-width : 600px) { 
+    #h4x-logo {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+#h4x-logo:hover {
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
