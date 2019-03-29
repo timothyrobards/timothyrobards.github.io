@@ -1832,9 +1832,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .video-overlay-header {
     color: #fff;
     position: absolute;
-    top: 30%; 
+    top: 40%; 
     left: 50%; 
     transform: translate(-50%, -50%);
+}
+
+.video-overlay-header img {
+    height: 5em;
 }
 
 .home-content__buttons {
@@ -2837,7 +2841,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-clients {
     padding-top: 11rem;
-    padding-bottom: 16rem;
+    padding-bottom: 5rem;
     background-color: #111111; /*e6e6e6*/
     color: #757575;
     position: relative;
@@ -2864,6 +2868,21 @@ html.no-csstransitions .home-content__main {
 
 .clients__slide:hover, .clients__slide:focus {
     opacity: 1;
+}
+/*Below selector + MQ for partners scroll (re-enabled @ mobile)*/
+
+div.slick-list.draggable {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) { 
+
+    div.slick-list.draggable {
+        display: block;
+    }
 }
 
 
