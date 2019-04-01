@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'tim@moniker.gg';
+$siteOwnersEmail = 'info@esx360.com';
 
 
 if($_POST) {

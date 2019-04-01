@@ -793,7 +793,7 @@ input[type="reset"],
 input[type="button"] {
     display: inline-block;
     font-family: 'Special Elite', cursive;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
     height: 5.4rem;
@@ -876,7 +876,7 @@ input[type="button"].btn--primary:focus {
 }
 
 .btn--stroke, button.btn--stroke {
-    background: transparent !important;
+    background: rgba(0, 0, 0, 0.3) !important;
     border: 0.2rem solid var(--accent-color);
     color: var(--accent-color);
 }
@@ -1838,12 +1838,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .video-overlay-header img {
-    height: 5em;
+    height: 10em;
 }
 
 .home-content__buttons {
     position: absolute;
-    top: 50%; 
+    top: 55%; 
     left: 50%; 
     transform: translate(-50%, -50%);
 }
@@ -1922,13 +1922,13 @@ and (max-device-width : 1024px)  {
 
 .home-content__scroll {
     position: absolute;
-    right: 9.5rem;
+    right: 2.5rem;
     bottom: 8.4rem;
 }
 
 .home-content__scroll a {
     font-family: 'Special Elite', cursive;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
     color: #FFFFFF;
@@ -2572,9 +2572,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    background: #ffffff;
-    padding: 0 0 10rem 0;
-    min-height: 800px;
+    background: #111111;
+    padding: 0 0 5rem 0;
     position: relative;
 }
 
@@ -2613,10 +2612,55 @@ html.no-csstransitions .home-content__main {
     background: #111111;
 }
 
-.works-content {
+/*.works-content {
     max-width: 1160px;
     margin-top: -23.4rem;
+}*/
+
+.works-gallery {
+    margin-top: -23.4rem;
+    /*display: grid;
+    justify-content: center;*/
 }
+
+.slidershow{
+    height: 500px;
+}
+
+.slidershow img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*
+.grid {
+    position: relative;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 20vw);
+    grid-template-rows: repeat(3, 70vh);
+}
+
+.grid:hover .grid img:not(:hover) {
+    opacity: 0.2;
+}
+
+.grid img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    transition: 0.2s ease all;
+}
+
+.grid img:hover {
+    z-index: 1;
+    -webkit-transform: scale(1.1) translateZ(20px);
+            transform: scale(1.1) translateZ(20px);
+    /*box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2);*/
+    cursor: zoom-in;
+}*/
 
 
 /* ------------------------------------------------------------------- 
@@ -3526,7 +3570,7 @@ footer .row {
     border: none;
     width: 85px;
     height: 28px;
-    background: url("../images/H4X_Logo_B-white - footer.png") no-repeat center; /* fit logo to 85x28px */
+    background: url("../images/ESX360_NEWLOGO_1_footer.png") no-repeat center; /* fit logo to 85x28px */
     background-size: 85px 28px;
     font: 0/0 a;
     text-shadow: none;
