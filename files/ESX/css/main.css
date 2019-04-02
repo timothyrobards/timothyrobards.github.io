@@ -1812,6 +1812,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
     /* Display video below overlay */
     z-index: -100!important;
+
+    background-image: url("../images/25183587204_2d9a888481_k.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center;
 }
 
 .video-bg::-webkit-media-controls {
