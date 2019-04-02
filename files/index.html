@@ -1,154 +1,704 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<title>BFGF</title>
-	
-	<!-- CSS -->
-	<link rel="stylesheet" href="style.css">
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>ESX360</title>
+    <meta name="description" content="ESX360 is an apparel brand providing esports performance wear and streetwear for gamers.">
 
-	<!-- FONTS -->
-	<link rel="stylesheet" href="https://use.typekit.net/rtm2dtx.css">
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Smooth Scroll -->
-    <script src="assets/js/smoothscroll.js"></script>
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/custom.css">
 
-    <!-- Overlay Transition -->
-	<script>
-	  function openNav() {
-	  document.getElementById("myNav").style.width = "100%";
-	  }
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
-	  function closeNav() {
-	  document.getElementById("myNav").style.width = "0%";
-	  }
-	</script>
+    <!-- FONTS
+    ================================================== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
-<body>
-	
-<div class="container">
-	
-  <section id="hero">
-  	
-	<!-- Nav -->
 
-	<div id="nav">
-	  <ul>
-	    <a href="index.html#portfolio"><li><span id="item1">portfolio</span></li></a>
-		<a href="index.html#aboutus"><li><span id="item2">about</span></li></a>
-		<a href="#"><li><span id="item3">services</span></li></a>
-	  	<a href="mailto:hello@atelierbfgf.com" id="rightify"><li><span>hello@atelierbfgf.com</span><li></a>
-	  </ul>
+<body id="top">
 
-	  <img src="assets/images/BGFG-logo.png" id="navlogo" alt="BFGF Logo">
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
 
-	  <div id="mobilenav"> 
-	    <span id="burger" onclick="openNav()">&#9776;</span>
-      </div>
+        <!--<div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/ESX360_NEWLOGO_1.png" alt="Homepage">
+            </a>
+        </div>-->
 
-	</div>
+        <nav class="header-nav">
 
-	<!-- Mobile Nav -->
+            <a href="#0" class="header-nav__close" title="close"><span>Close</span></a>
 
-  	
-  	<div id="myNav" class="overlay">
-	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  
-	  <div class="overlay-content">
-	    <a href="index.html#aboutus" onclick="closeNav()">about</a>
-     	<a href="index.html#portfolio" onclick="closeNav()">portfolio</a>
-	  	<a href="about.html" onclick="closeNav()">services</a>
-	  	<a href="mailto:hello@atelierbfgf.com" id="email" onclick="closeNav()">hello@atelierbfgf.com</a>
-	  </div>
+            <div class="header-nav__content">
+                <h3>MENU</h3>
+                
+                <ul class="header-nav__list">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <!--<li><a class="smoothscroll"  href="#services" title="services">Services</a></li>-->
+                    <li><a class="smoothscroll"  href="#works" title="works">Products</a></li>
+                    <li><a class="smoothscroll"  href="#clients" title="clients">Partners</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Contact Us</a></li>
+                </ul>
+    
+                <!--<p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>-->
+    
+                <!--<ul class="header-nav__social">
+                    <li>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                    </li>
+                </ul>-->
 
-	</div>
+            </div> <!-- end header-nav__content -->
+
+        </nav>  <!-- end header-nav -->
+
+        <a class="header-menu-toggle" href="#0">
+            <!--<span class="header-menu-text">Menu</span>-->
+            <span class="header-menu-icon"></span>
+        </a>
+
+    </header> <!-- end s-header -->
 
 
-	<!-- Hero Content -->
+    <!-- home
+    ================================================== -->
+    <!--<section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/IMG_8125_header.png" data-natural-width=3000 data-natural-height=2000 data-position-y=center>-->
 
-	<div class="BF">
-        <img src="assets/images/BF-White.svg" />
-        <img src="assets/images/BF-Black.svg" />
+    <section id="home" class="s-home target-section">
+
+        <video class="video-bg" autoplay controls="true" muted loop playsinline>
+            <source src="images/ESX360_Logo_Animation-small.mp4" type="video/mp4" />
+        </video>
+
+        <div class="video-overlay">
+            <!--<div class="video-overlay-header">
+                <img src="images/ESX360_NEWLOGO_1.png">
+            </div>-->
+
+            <!--<div class="home-content__buttons">
+                    <a href="#works" class="smoothscroll btn btn--stroke">
+                        Products
+                    </a>
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Contact Us
+                    </a>
+            </div>-->
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+            <!--<div class="home-content__line"></div>-->
+
+        </div>
+
+        <!--<div class="overlay"></div>
+        <div class="shadow-overlay"></div>-->
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <!--<h3>Welcome to ESX360</h3>-->
+
+                <!--<h1 class="">
+                    ESX360 
+                </h1>-->
+
+                <!--<div class="home-content__buttons">
+                    <a href="#about" class="smoothscroll btn btn--stroke">
+                        Who we are
+                    </a>
+                    <a href="#contact" class="smoothscroll btn btn--stroke">
+                        Contact Us
+                    </a>
+                </div>-->
+
+            </div>
+
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+
+        </div> <!-- end home-content -->
+
+
+        <!--<ul class="home-social">
+            <li>
+                <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
+            </li>
+            <li>
+                <a href="#0"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
+            </li>
+        </ul> -->
+        <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id='about' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <!--<h3 class="subhead subhead--dark">Hello There</h3>-->
+                <h1 class="display-1 display-1--light">We Are ESX360</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row about-desc" data-aos="fade-up">
+            <div class="col-full">
+                <p>
+                We're an esports apparel brand providing comfortable performance wear and streetwear for gamers.
+                </p>
+            </div>
+        </div> <!-- end about-desc -->
+
+        <!--<div class="row about-stats stats block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block stats__col ">
+                <div class="stats__count">127</div>
+                <h5>Awards Received</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">1505</div>
+                <h5>Cups of Coffee</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">109</div>
+                <h5>Projects Completed</h5>
+            </div>
+            <div class="col-block stats__col">
+                <div class="stats__count">102</div>
+                <h5>Happy Clients</h5> 
+            </div>
+
+        </div>--> <!-- end about-stats -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <!--
+    <section id='services' class="s-services">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">What We Do</h3>
+                <h1 class="display-2">We’ve got everything you need to launch and grow your business</h1>
+            </div>
+        </div> <!~~ end section-header ~~>
+
+        <div class="row services-list block-1-2 block-tab-full">
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-paint-brush"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Brand Identity</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-group"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Illustration</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-megaphone"></i>
+                </div>  
+                <div class="service-text">
+                    <h3 class="h2">Marketing</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-earth"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Web Design</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon">
+                    <i class="icon-cube"></i>
+                </div>
+                <div class="service-text">
+                    <h3 class="h2">Packaging Design</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="col-block service-item" data-aos="fade-up">
+                <div class="service-icon"><i class="icon-lego-block"></i></div>
+                <div class="service-text">
+                    <h3 class="h2">Web Development</h3>
+                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
+                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
+                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
+                    </p>
+                </div>
+            </div>
+
+        </div> <!~~ end services-list ~~>
+
+    </section> --> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id='works' class="s-works">
+
+        <div class="intro-wrap">
+        
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <!--<h3 class="subhead">Our Products</h3>-->
+                    <h1 class="display-2 display-2--light">Our Products</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+    
+        <!--<div class="row works-gallery slidershow">
+            <div><img src= "images/apparel-images/HOODIE-1.png" height="100" /></div>
+            <div><img src= "images/apparel-images/HOODIE-2.png" height="100" /></div>
+            <div><img src= "images/apparel-images/LONG-SLEEVE-TEE-1.png" height="100" /></div>
+            <div><img src= "images/apparel-images/SHORT-SLEEVE-TEE-1.png" height="100" /></div>
+            <div><img src= "images/apparel-images/SHORT-SLEEVE-TEE-2.png" height="100" /></div>
+            <div><img src= "images/apparel-images/HOODIE-3.png" height="100" /></div>
+            <div><img src= "images/apparel-images/SHORT-SLEEVE-TEE-3.png" height="100" /></div>
+            <div><img src= "images/apparel-images/SHORT-SLEEVE-TEE-4.png" height="100" /></div>
+            <div><img src= "images/apparel-images/SHORT-SLEEVE-TEE-5.png" height="100" /></div>
+            <div><img src= "images/apparel-images/SHORT-SLEEVE-TEE-6.png" height="100" /></div>
+            <div><img src= "images/apparel-images/SHORT-SLEEVE-TEE-7.png" height="100" /></div>
+            <div><img src= "images/apparel-images/TEAM-JERSEY-1.png" height="100" /></div>
+        </div>-->
+        <div class="marquee-container row works-gallery">
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="marquee-tag"><img src= "images/apparel-images/H1.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/H2.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/H3.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/H4.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/HOODIE-1.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/HOODIE-2.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/LONG-SLEEVE-TEE-1.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T1.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T2.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T3.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/t4.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T5.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T6.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T7.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T8.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T9.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T10.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T11.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T12.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T13.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T14.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T15.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T16.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/T17.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/SHORT-SLEEVE-TEE-1.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/SHORT-SLEEVE-TEE-2.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/HOODIE-3.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/SHORT-SLEEVE-TEE-3.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/SHORT-SLEEVE-TEE-4.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/SHORT-SLEEVE-TEE-5.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/SHORT-SLEEVE-TEE-6.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/SHORT-SLEEVE-TEE-7.png" /></div>
+                <div class="marquee-tag"><img src= "images/apparel-images/TEAM-JERSEY-1.png" /></div>
+            </div>
+        </div>
+        </div>
+
+        <!--<div class="row clients-testimonials" data-aos="fade-up">
+            <div class="col-full">
+                <div class="testimonials">
+
+                    <div class="testimonials__slide">
+
+                        <p>Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. 
+                        Laudantium quia consequatur</p>
+
+                        <img src="images/avatars/220px-Crimsix_PL_2019.png" alt="CRIMSIX" class="testimonials__avatar">
+                        <div class="testimonials__info">
+                            <span class="testimonials__name">Crimsix</span> 
+                            <!~~<span class="testimonials__pos">CEO, Apple</span>~~>
+                        </div>
+
+                    </div>
+
+                </div><!~~ end testimonials ~~>
+                
+            </div> <!~~ end col-full ~~>
+        </div> --><!-- end client-testimonials -->
+    
+    <div class="row clients-testimonials-grid" data-aos="fade-up">
+        <p id="grid-words">Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio nam accusantium ipsum. <span id="authorquote">- Crimsix</span></p>
+        <img src="images/avatars/220px-Crimsix_PL_2019.png" alt="CRIMSIX" class="testimonials__avatar" id="grid-image">
     </div>
 
-  	<img src="assets/images/BGFG-logo.png" id="logo" alt="BFGF Logo">
+    </section> <!-- end s-works -->
 
-  	<div class="GF">
-        <img src="assets/images/GF-White.svg" />
-        <img src="assets/images/GF-Black.svg" />
+
+    <!-- clients
+    ================================================== -->
+    <section id="clients" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <!--<h3 class="subhead">Our Partners</h3>-->
+                <h1 class="display-2 ">Our Partners</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+                    
+                    <a href="https://h4x.gg" title="H4X" class="clients__slide" target="_blank"><img src="images/clients/H4X_white.png" /></a>
+                    <a href="https://moniker.gg" title="Moniker Inc." class="clients__slide" target="_blank"><img src="images/clients/MONIKER_white.png" /></a>
+                    <a href="https://dreamhack.com" title="Dreamhack" class="clients__slide" target="_blank"><img src="images/clients/dreamhack.png" /></a>
+                    <a href="http://www.complexitygaming.com" title="Complexity" class="clients__slide" target="_blank"><img src="images/clients/complexity.png" /></a>
+
+                    <!--  Added to center if few clients / else remove this CSS
+                        div.slick-list.draggable {
+                            display: flex;
+                            justify-content: center;
+                        }
+
+                        s.clients pb: 16 to 5
+                    -->
+                     
+                </div> <!-- end clients -->
+            </div> <!-- end col-full -->
+        </div> <!-- end clients-outer -->
+            
+    </section> <!-- end s-clients -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact">
+
+        <div class="overlay"></div>
+        <!--<div class="contact__line"></div>-->
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <!--<h3 class="subhead">Contact Us</h3>-->
+                <h1 class="display-2 display-2--light ">Contact Us</h1>
+            </div>
+        </div>
+
+        <div class="row contact-content" data-aos="fade-up">
+            
+            <div class="contact-primary">
+
+                <h3 class="h6">Send Us A Message</h3>
+
+                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                    <fieldset>
+    
+                    <div class="form-field">
+                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    </fieldset>
+                </form>
+
+                <!-- contact-warning -->
+                <div class="message-warning">
+                    Something went wrong. Please try again.
+                </div> 
+            
+                <!-- contact-success -->
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+
+            </div> <!-- end contact-primary -->
+
+            <div class="contact-secondary">
+                <div class="contact-info">
+
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+
+                    <!--<div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            1600 Amphitheatre Parkway<br>
+                            Mountain View, CA<br>
+                            94043 US
+                        </p>
+                    </div>-->
+
+                    <div class="cinfo">
+                        <h5>Email Us At</h5>
+                        <p>
+                            info@esx360.com<br>
+                        </p>
+                    </div>
+
+                    <!--<div class="cinfo">
+                        <h5>Call Us At</h5>
+                        <p>
+                            Phone: (+63) 555 1212<br>
+                            Mobile: (+63) 555 0100<br>
+                            Fax: (+63) 555 0101
+                        </p>
+                    </div>-->
+
+                    <!--<ul class="contact-social">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>--> <!-- end contact-social -->
+
+                </div> <!-- end contact-info -->
+            </div> <!-- end contact-secondary -->
+
+        </div> <!-- end contact-content -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+
+        <!--<div class="row footer-main">
+
+            <div class="col-six tab-full left footer-desc">
+
+                <div class="footer-logo"></div>
+                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+
+            </div>
+
+            <div class="col-six tab-full right footer-subscribe">
+
+                <h4>Get Notified</h4>
+                <p>Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt iusto porro.</p>
+
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+
+            </div>
+
+        </div> <!~~ end footer-main ~~>-->
+
+        <div class="row footer-bottom">
+
+            <div class="col-twelve">
+                <div class="footer-logo-center"></div></a>
+                <div class="copyright">
+                    <span>© Copyright ESX360 2019</span> 
+                    <!--<span>Site Template by <a href="https://www.colorlib.com/">Colorlib</a></span>	-->
+                </div>
+
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-arrow-up" aria-hidden="true"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- end footer-bottom -->
+
+    </footer> <!-- end footer -->
+    
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> <!-- end photoSwipe background -->
+
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
     </div>
 
-  </section>
 
-  <!-- Portfolio Section -->
-
-  <section id="portfolio">
-  	
-	<ul class="gallery">
-
-      <a href="meed.html"> 
-      <li class="meed"> 
-        <span class="text-content"><h2>MEED</h2><p>Identity - UX/UI</p></span>
-      </li>
-      </a>
-
-      <a href="pride.html"> 
-      <li class="pride"> 
-        <span class="text-content"><h2>SAN FRANCISCO PRIDE SOAP</h2><p>Identity - UX/UI</p></span>
-      </li>
-      </a>
-
-      <a href="goldensands.html"> 
-      <li class="goa"> 
-        <span class="text-content"><h2>GOLDEN SANDS</h2><p>Identity - UX/UI</p></span>
-      </li>
-      </a>      
-
-      <a href="circle.html"> 
-      <li class="circle"> 
-        <span class="text-content"><h2>CIRCLE</h2><p>Identity - UX/UI</p></span>
-      </li>
-      </a>  
-
-    </ul>
-
-  </section>
-
-  <!-- About Us Section -->
-
-  <section id="aboutus">
-  	
-	
-      <p class="leadtext">Let's build an almighty mountain. With something so strong, a little bit can go a long way. Pretend you're water. Just floating without any effort. Having a good day. The secret to doing anything is believing that you can do it. Anything that you believe you can do strong enough, you can do. Anything. As long as you believe. Have fun with it.</p>
-
-      <p class="lefttext">If we're going to have animals around we all have to be concerned about them and take care of them. We might as well make some Almighty mountains today as well, what the heck. This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. It looks so good, I might as well not stop. Let your imagination be your guide.</p>
-
-      <p class="righttext">Now we can begin working on lots of happy little things. When you do it your way you can go anywhere you choose. Just let your mind wander and enjoy. This should make you happy. If you've been in Alaska less than a year you're a Cheechako. If you don't like it - change it. It's your world. Now it's beginning to make a little sense.</p>
-
-  </section>
-
-</div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<!-- NAV jQuery -->
-
-<script type="text/javascript">
-(function($) {          
-    $(document).ready(function(){                    
-        $(window).scroll(function(){                          
-            if ($(this).scrollTop() > 80 * window.innerHeight/100) {
-                $('#nav').fadeIn(500);
-            } else {
-                $('#nav').fadeOut(500);
-            }
-        });
-    });
-})(jQuery);
-</script>
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script src="js/slick-custom.js"></script>
 
 </body>
+
 </html>
