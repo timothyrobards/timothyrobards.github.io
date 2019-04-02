@@ -75,7 +75,7 @@ html, body {
 
 body {
     background: #111111;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.7rem;
     font-style: normal;
     font-weight: normal;
@@ -115,7 +115,7 @@ a:hover, a:active {
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, 
 .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     color: #000000;
     font-style: normal;
     font-weight: normal;
@@ -190,7 +190,7 @@ p img {
 }
 
 p.lead {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.8;
@@ -212,11 +212,11 @@ em, i, strong, b {
 }
 
 em, i {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
 }
 
 strong, b {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
 }
 
 small {
@@ -243,7 +243,7 @@ blockquote:before {
 }
 
 blockquote p {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     padding: 0;
     font-size: 2.1rem;
     line-height: 1.857;
@@ -252,7 +252,7 @@ blockquote p {
 
 blockquote cite {
     display: block;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     line-height: 1.5;
@@ -268,7 +268,7 @@ blockquote cite a, blockquote cite a:visited {
 }
 
 abbr {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-variant: small-caps;
     text-transform: lowercase;
     letter-spacing: .05rem;
@@ -429,7 +429,7 @@ table {
     border-width: 0;
     width: 100%;
     max-width: 100%;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
 }
 
 th, td {
@@ -440,7 +440,7 @@ th, td {
 
 th {
     color: #000000;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
 }
 
 td {
@@ -626,7 +626,7 @@ select {
     border: 0;
     outline: none;
     color: #333333;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.4rem;
     line-height: 3rem;
     max-width: 100%;
@@ -710,7 +710,7 @@ select:focus {
 }
 
 label, legend {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: .9rem;
@@ -726,7 +726,7 @@ input[type="checkbox"], input[type="radio"] {
 label > .label-text {
     display: inline-block;
     margin-left: 1rem;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-weight: normal;
     line-height: inherit;
 }
@@ -792,7 +792,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
     display: inline-block;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -912,7 +912,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: relative;
     margin-bottom: 3rem;
     border-radius: 3px;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
     line-height: 1.6;
 }
@@ -961,7 +961,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     margin: 0;
     padding: 1.5rem .6rem 0 0;
     font-size: 8.4rem;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     line-height: 6rem;
     text-indent: 0;
@@ -1099,7 +1099,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .stats-tabs li a {
     display: inline-block;
     font-size: 2.5rem;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     border: none;
     color: #000000;
@@ -1113,7 +1113,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: block;
     margin: .6rem 0 0 0;
     font-size: 1.4rem;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     color: #828282;
 }
 
@@ -1139,7 +1139,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     position: absolute;
     left: 0;
     top: -3rem;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     color: #000000;
     text-transform: uppercase;
     letter-spacing: .2rem;
@@ -1158,7 +1158,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     right: 0;
     top: -3.6rem;
     display: block;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     color: #FFFFFF;
     font-size: 1.1rem;
     line-height: 1;
@@ -1218,19 +1218,19 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ## display headings
  * ------------------------------------------------------------------- */
 .display-1 {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 7.8rem;
     line-height: 1.25;
-    color: #000000;
+    color: #fff;
     margin-top: 0;
 }
 
 .display-1--light {
-    color: #000;
+    color: #fff;
 }
 
 .display-2 {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 5.2rem;
     line-height: 1.255;
     color: #FFFFFF;
@@ -1246,7 +1246,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .subhead {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.7rem;
     line-height: 1.333;
     text-transform: uppercase;
@@ -1478,7 +1478,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .header-nav {
     background: #0C0C0C;
     color: rgba(255, 255, 255, 0.25);
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
     line-height: 1.846;
     padding: 3.6rem 3rem 3.6rem 3.6rem;
@@ -1511,7 +1511,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav h3 {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 11px;
     line-height: 1.5;
     text-transform: uppercase;
@@ -1533,7 +1533,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .header-nav__list {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.8rem;
     margin: 3.6rem 0 3rem 0;
     padding: 0 0 1.8rem 0;
@@ -1652,7 +1652,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     height: 42px;
     width: 42px;
     line-height: 42px;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 3.3rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -1748,7 +1748,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .s-home {
     width: 100%;
     height: 100%;
-    min-height: 786px;
     background-color: transparent;
     position: relative;
     display: table;
@@ -1843,14 +1842,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-content__buttons {
     position: absolute;
-    top: 55%; 
+    top: 90%; 
     left: 50%; 
     transform: translate(-50%, -50%);
 }
 
 .home-content__scroll{
     position: absolute;
-    top: 80%; 
+    top: 90%; 
     right: 0%; 
     transform: translate(-50%, -50%);
 }
@@ -1858,7 +1857,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 /*End Video*/
 
 .home-content h3 {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.6rem;
     color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
@@ -1871,7 +1870,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .home-content h1 {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 16.3rem;
     line-height: 1.333;
     margin-top: 0;
@@ -1920,14 +1919,8 @@ and (max-device-width : 1024px)  {
     color: #000000;
 }
 
-.home-content__scroll {
-    position: absolute;
-    right: 2.5rem;
-    bottom: 8.4rem;
-}
-
 .home-content__scroll a {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
@@ -1975,7 +1968,7 @@ and (max-device-width : 1024px)  {
  * ## home social 
  * ------------------------------------------------------------------- */
 .home-social {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     list-style: none;
     margin: 0;
     position: absolute;
@@ -2194,10 +2187,20 @@ html.no-csstransitions .home-content__main {
         right: 4rem;
     }
     .home-content__scroll {
-        right: 7.5rem;
+        position: absolute;
+        top: 90%; 
+        left: 50%; 
+        transform: translate(-50%, -50%);
     }
     .home-content__line {
         right: 5.5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) and (orientation : landscape){
+    .home-content__scroll {
+        
+        left: 70%;
     }
 }
 
@@ -2280,8 +2283,8 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: var(--accent-color);
-    color: #010507;
+    background-color: #111111;
+    color: #2a52be;
     position: relative;
 }
 
@@ -2318,7 +2321,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats__count {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 8.4rem;
     line-height: 1;
     color: #FFFFFF;
@@ -2329,7 +2332,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .stats h5 {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     margin-top: 1.8rem;
     color: #000000;
     font-size: 1.8rem;
@@ -2577,36 +2580,6 @@ html.no-csstransitions .home-content__main {
     position: relative;
 }
 
-.shape-left {
-    height: 100%;
-    width: 100%;
-    max-height: 100%;
-    max-width: 100%;
-    margin: 0 auto; 
-    background-color: #111111;
-    display: inline-block;
-    position: absolute;
-    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 60%);
-    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 60%);
-    z-index: -1;
-}
-
-.shape-right {
-    top: 0;
-    max-height: 100%;
-    max-width: 100%;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto; 
-    background-color: #000;
-    overflow: hidden;
-    display: inline-block;
-    position: absolute;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
-    z-index: -1;
-}
-
 .s-works .intro-wrap {
     padding: 10rem 0 25.2rem;
     background: #111111;
@@ -2623,13 +2596,85 @@ html.no-csstransitions .home-content__main {
     justify-content: center;*/
 }
 
-.slidershow{
+/*.slidershow{
     height: 500px;
+}*/
+
+.marquee-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.slidershow img {
-    width: 100%;
-    height: auto;
+.marquee {
+  background: #111111;
+  width: 85vw;
+  box-sizing: border-box;
+  padding: 1em;
+  color: #fff;
+  font-weight: 200;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 35s linear infinite running;
+}
+
+.marquee-content:hover {
+  animation-play-state: paused;
+}
+
+.marquee-tag {
+  width: 250px;
+  margin: 0 0.5em;
+  padding: 0.5em;
+  background: rgba(255,255,255,0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.marquee-tag:hover {
+  background: rgba(255,255,255,0.5);
+  transform: scale(1.1);
+  cursor: default;
+}
+
+@-moz-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+@-o-keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(-50%);
+  }
 }
 
 
@@ -2753,7 +2798,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .item-folio__title {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.4rem;
     line-height: 1.286;
     color: #FFFFFF;
@@ -2764,7 +2809,7 @@ html.no-csstransitions .home-content__main {
 
 .item-folio__cat {
     color: rgba(255, 255, 255, 0.5);
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.4rem;
     line-height: 1.714;
     margin-bottom: 0;
@@ -2913,12 +2958,12 @@ html.no-csstransitions .home-content__main {
 .clients__slide:hover, .clients__slide:focus {
     opacity: 1;
 }
-/*Below selector + MQ for partners scroll (re-enabled @ mobile)*/
+/*Below selector + MQ for partners scroll (re-enabled @ mobile)
 
 div.slick-list.draggable {
     display: flex;
     justify-content: center;
-}
+}*/
 
 @media only screen 
 and (min-device-width : 375px) 
@@ -2938,6 +2983,58 @@ and (max-device-width : 667px) {
     padding-top: 7.2rem;
     text-align: center;
     position: relative;
+}
+
+.clients-testimonials-grid{
+    display: grid;
+    width: 80%;
+    grid-template-areas: "words image";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    -ms-justify-items: center;    
+    justify-items: center; 
+    margin-top: 4.2rem;
+    padding-top: 7.2rem;
+}
+
+@media only screen 
+and (min-device-width : 100px) 
+and (max-device-width : 900px)  { 
+
+    .clients-testimonials-grid{
+        width: 90%;
+        grid-template-areas: "words"
+                             "image";
+    }
+
+    #grid-words {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    img#grid-image {
+        max-width: 200px;
+    }
+}
+
+#grid-words {
+    grid-area: words;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.7;
+    color: #555555;
+    margin-bottom: 6rem;
+}
+
+#grid-image {
+    grid-area: image;
+    border-radius: 50%;
+}
+
+#authorquote {
+    color: #fff;
 }
 
 .clients-testimonials::before {
@@ -2960,7 +3057,7 @@ and (max-device-width : 667px) {
 }
 
 .clients-testimonials .testimonials p {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 3rem;
     line-height: 1.8;
     color: #555555;
@@ -2972,8 +3069,8 @@ and (max-device-width : 667px) {
 }
 
 .clients-testimonials .testimonials__avatar {
-    height: 8.4rem;
-    width: 8.4rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
     margin: 0 auto 1.2rem auto;
 }
@@ -2984,12 +3081,12 @@ and (max-device-width : 667px) {
 }
 
 .clients-testimonials .testimonials__name {
-    font-family: 'Special Elite', cursive;
-    color: #000000;
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
 }
 
 .clients-testimonials .testimonials__pos {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.4rem;
 }
 
@@ -3102,7 +3199,7 @@ and (max-device-width : 667px) {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/IMG_8138_footer_bg.png");
+    background-image: url("../images/esports-crowd.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 10rem;
@@ -3132,7 +3229,7 @@ and (max-device-width : 667px) {
 }
 
 .s-contact .form-field label {
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1rem;
     line-height: 2.4rem;
     position: absolute;
@@ -3174,7 +3271,7 @@ and (max-device-width : 667px) {
     color: rgba(255, 255, 255, 0.4);
     padding-top: 6rem;
     padding-bottom: 6rem;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
     line-height: 2;
     position: relative;
@@ -3225,31 +3322,31 @@ and (max-device-width : 667px) {
 .contact-content input::-webkit-input-placeholder,
 .contact-content select::-webkit-input-placeholder,
 .contact-content textarea::-webkit-input-placeholder {
-    color: #4f4f4f;
+    color: #fff;
 }
 
 .contact-content input:-moz-placeholder,
 .contact-content select:-moz-placeholder,
 .contact-content textarea:-moz-placeholder {
-    color: #4f4f4f;    /* Firefox 18- */
+    color: #fff;    /* Firefox 18- */
 }
 
 .contact-content input::-moz-placeholder,
 .contact-content select::-moz-placeholder,
 .contact-content textarea::-moz-placeholder {
-    color: #4f4f4f;    /* Firefox 19+ */
+    color: #fff;    /* Firefox 19+ */
 }
 
 .contact-content input:-ms-input-placeholder,
 .contact-content select:-ms-input-placeholder,
 .contact-content textarea:-ms-input-placeholder {
-    color: #4f4f4f;
+    color: #fff;
 }
 
 .contact-content input.placeholder,
 .contact-content select.placeholder,
 .contact-content textarea.placeholder {
-    color: #4f4f4f !important;
+    color: #fff !important;
 }
 .contact-primary, .contact-secondary {
     float: left;
@@ -3352,7 +3449,7 @@ and (max-device-width : 667px) {
 
 .submit-loader .text-loader {
     display: none;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 1.846;
@@ -3501,7 +3598,7 @@ and (max-device-width : 667px) {
  * ------------------------------------------------------------------- */
 footer {
     padding: 0 0 6rem; /*9rem 0 6rem;*/
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 15px;
     line-height: 2;
     text-align: center;
@@ -3644,7 +3741,7 @@ footer .row {
 
 .footer-subscribe #mc-form label {
     color: #FFFFFF;
-    font-family: 'Special Elite', cursive;
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.3rem;
     padding: 0 2rem;
 }
