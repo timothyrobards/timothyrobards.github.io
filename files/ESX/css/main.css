@@ -3004,8 +3004,10 @@ and (max-device-width : 900px)  {
 
     .clients-testimonials-grid{
         width: 90%;
-        grid-template-areas: "words"
-                             "image";
+        grid-template-areas: "words words"
+                             "image image";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     #grid-words {
@@ -3199,7 +3201,7 @@ and (max-device-width : 900px)  {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/esports-crowd.jpg");
+    background-image: url("../images/25183587204_2d9a888481_k.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 10rem;
