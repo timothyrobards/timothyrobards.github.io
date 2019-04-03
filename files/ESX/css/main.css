@@ -2962,7 +2962,7 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .s-works {
-        padding-bottom: 0rem;
+        padding-bottom: 8rem;
     }
     .s-works .intro-wrap {
         padding: 1rem 0 25.2rem;
@@ -2981,8 +2981,6 @@ html.no-csstransitions .home-content__main {
         font-size: 1.4rem;
     }
 }
-
-
 
 /* ===================================================================
  * # clients
