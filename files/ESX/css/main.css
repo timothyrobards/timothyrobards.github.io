@@ -1325,7 +1325,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     display: inline-block;
     height: 1px;
     width: 550px;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: #2a52be;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -1335,7 +1335,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .section-header.has-bottom-sep.light-sep::before {
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #2a52be;
 }
 
 
@@ -1813,9 +1813,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     /* Display video below overlay */
     z-index: -100!important;
 
-    background-image: url("../images/25183587204_2d9a888481_k.jpg");
+    background-image: url("../images/landing-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; /*  Safari  */
+    -khtml-background-size: 100% 100%; /*  Konqueror  */
+    -moz-background-size: 100% 100%; /*  Firefox  */
 }
 
 .video-bg::-webkit-media-controls {
@@ -2285,15 +2289,15 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-about {
-    padding-top: 16.2rem;
-    padding-bottom: 9rem;
+    padding-top: 17.2rem;
+    padding-bottom: 20rem;
     background-color: #111111;
-    color: #2a52be;
+    color: #fff;
     position: relative;
 }
 
 .s-about .section-header.has-bottom-sep::before {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: #2a52be;
 }
 
 .about-desc {
@@ -2582,12 +2586,20 @@ html.no-csstransitions .home-content__main {
     background: #111111;
     padding: 0 0 5rem 0;
     position: relative;
+    background-image: url("../images/25693096872_7e6e8f2cf6_k.jpg");
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-size: 100% 100%;
+    -webkit-background-size: 100% 100%; /*  Safari  */
+    -khtml-background-size: 100% 100%; /*  Konqueror  */
+    -moz-background-size: 100% 100%; /*  Firefox  */
+    padding: 10rem 0 25.2rem;
 }
 
-.s-works .intro-wrap {
+/*.s-works .intro-wrap {
     padding: 10rem 0 25.2rem;
     background: #111111;
-}
+}*/
 
 /*.works-content {
     max-width: 1160px;
@@ -2595,7 +2607,6 @@ html.no-csstransitions .home-content__main {
 }*/
 
 .works-gallery {
-    margin-top: -23.4rem;
     /*display: grid;
     justify-content: center;*/
 }
@@ -2611,7 +2622,7 @@ html.no-csstransitions .home-content__main {
 }
 
 .marquee {
-  background: #111111;
+  background: transparent; /*111111*/
   width: 85vw;
   box-sizing: border-box;
   padding: 1em;
@@ -2917,6 +2928,9 @@ html.no-csstransitions .home-content__main {
     .works-content {
         margin-top: -25.2rem;
     }
+    .works-gallery {
+        margin-top: -23.4rem;
+    }
     .masonry__brick {
         float: none;
         width: 100%;
@@ -2933,8 +2947,8 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-clients {
-    padding-top: 11rem;
-    padding-bottom: 5rem;
+    padding-top: 17rem;
+    padding-bottom: 11rem;
     background-color: #111111; /*e6e6e6*/
     color: #757575;
     position: relative;
@@ -2989,24 +3003,23 @@ and (max-device-width : 667px) {
     position: relative;
 }
 
-.clients-testimonials-grid{
+.clients-testimonials-grid {
     display: grid;
     width: 80%;
+    background-color: #111111;
     grid-template-areas: "words image";
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     -ms-justify-items: center;    
     justify-items: center; 
-    margin-top: 4.2rem;
+    margin-top: 8.2rem;
     padding-top: 7.2rem;
 }
 
-@media only screen 
-and (min-device-width : 100px) 
-and (max-device-width : 900px)  { 
+@media only screen and (max-width : 900px) {  
 
-    .clients-testimonials-grid{
+    .clients-testimonials-grid {
         width: 90%;
         grid-template-areas: "words words"
                              "image image";
@@ -3017,6 +3030,11 @@ and (max-device-width : 900px)  {
     #grid-words {
         font-size: 1.5rem;
         line-height: 1.5;
+        margin-bottom:2rem;
+    }
+
+    #grid-image {
+        margin-bottom: 2rem;
     }
 
     img#grid-image {
@@ -3032,11 +3050,13 @@ and (max-device-width : 900px)  {
     line-height: 1.7;
     color: #555555;
     margin-bottom: 6rem;
+    width: 80%;
 }
 
 #grid-image {
     grid-area: image;
     border-radius: 50%;
+    margin-bottom: 6rem;
 }
 
 #authorquote {
@@ -3220,7 +3240,7 @@ and (max-device-width : 900px)  {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: .8;
+    opacity: .3;
     background-color: #151515;
 }
 
@@ -3273,7 +3293,7 @@ and (max-device-width : 900px)  {
 
 .contact-content {
     max-width: 1000px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.8);
     color: rgba(255, 255, 255, 0.4);
     padding-top: 6rem;
     padding-bottom: 6rem;
