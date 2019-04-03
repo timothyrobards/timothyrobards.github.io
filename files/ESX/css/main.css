@@ -2407,7 +2407,8 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (max-width: 600px) {
     .s-about {
-        padding-top: 12rem;
+        padding-top: 18rem;
+        padding-bottom: 22rem;
     }
     .about-desc {
         font-size: 1.9rem;
@@ -2589,11 +2590,7 @@ html.no-csstransitions .home-content__main {
     background-image: url("../images/25693096872_7e6e8f2cf6_k.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%; /*  Safari  */
-    -khtml-background-size: 100% 100%; /*  Konqueror  */
-    -moz-background-size: 100% 100%; /*  Firefox  */
-    padding: 10rem 0 25.2rem;
+    padding: 10rem 0 10rem;
 }
 
 /*.s-works .intro-wrap {
@@ -2718,7 +2715,7 @@ html.no-csstransitions .home-content__main {
     z-index: 1;
     -webkit-transform: scale(1.1) translateZ(20px);
             transform: scale(1.1) translateZ(20px);
-    /*box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2);*/
+    /*box-shadow: 0 10px 100px rgba(0, 0, 0, 0.2);
     cursor: zoom-in;
 }*/
 
@@ -2918,12 +2915,21 @@ html.no-csstransitions .home-content__main {
     }
 }
 
+@media only screen and (min-width: 2560px) {
+    .s-works {
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%; /*  Safari  */
+        -khtml-background-size: 100% 100%; /*  Konqueror  */
+        -moz-background-size: 100% 100%; /*  Firefox  */
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .s-works {
-        padding-bottom: 12rem;
+        padding-bottom: 0rem;
     }
     .s-works .intro-wrap {
-        padding: 12rem 0 25.2rem;
+        padding: 1rem 0 25.2rem;
     }
     .works-content {
         margin-top: -25.2rem;
@@ -3025,22 +3031,39 @@ and (max-device-width : 667px) {
                              "image image";
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        background-color: #111111;
     }
 
     #grid-words {
         font-size: 1.5rem;
         line-height: 1.5;
-        margin-bottom:2rem;
+        margin-bottom: 2rem;
+    }
+
+    p#grid-words {
+        padding-left: 0em;
+        margin-bottom: 1rem;
     }
 
     #grid-image {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     img#grid-image {
         max-width: 200px;
+        margin-bottom: 3rem;
+    }
+    div.row.clients-testimonials-grid {
+        padding-top: 0em;
     }
 }
+
+@media only screen and (max-width : 750px) {  
+    div.row.clients-testimonials-grid {
+        padding-top: 3em;
+    }
+}
+
 
 #grid-words {
     grid-area: words;
@@ -3050,6 +3073,7 @@ and (max-device-width : 667px) {
     line-height: 1.7;
     color: #555555;
     margin-bottom: 6rem;
+    padding-left: 1em;
     width: 80%;
 }
 
