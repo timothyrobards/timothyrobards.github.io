@@ -1816,10 +1816,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     background-image: url("../images/landing-bg.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
-    background-size: 100% 100%;
-    -webkit-background-size: 100% 100%; /*  Safari  */
-    -khtml-background-size: 100% 100%; /*  Konqueror  */
-    -moz-background-size: 100% 100%; /*  Firefox  */
 }
 
 .video-bg::-webkit-media-controls {
@@ -2917,6 +2913,12 @@ html.no-csstransitions .home-content__main {
 
 @media only screen and (min-width: 2560px) {
     .s-works {
+        background-size: 100% 100%;
+        -webkit-background-size: 100% 100%; /*  Safari  */
+        -khtml-background-size: 100% 100%; /*  Konqueror  */
+        -moz-background-size: 100% 100%; /*  Firefox  */
+    }
+    .video-bg {
         background-size: 100% 100%;
         -webkit-background-size: 100% 100%; /*  Safari  */
         -khtml-background-size: 100% 100%; /*  Konqueror  */
