@@ -2216,7 +2216,7 @@ html.no-csstransitions .home-content__main {
     }
     .home-content__scroll {
         position: absolute;
-        top: 90%; 
+        top: 85%; 
         left: 50%; 
         transform: translate(-50%, -50%);
     }
@@ -2605,7 +2605,7 @@ html.no-csstransitions .home-content__main {
  *
  * ------------------------------------------------------------------- */
 .s-works {
-    background: #111111;
+    background: transparent;
     padding: 0 0 5rem 0;
     position: relative;
     background-image: url("../images/25693096872_7e6e8f2cf6_k.jpg");
