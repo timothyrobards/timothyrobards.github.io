@@ -2653,7 +2653,7 @@ html.no-csstransitions .home-content__main {
 
 .marquee-content {
   display: flex;
-  animation: marquee 35s linear infinite running;
+  animation: marquee 55s linear infinite running;
 }
 
 .marquee-content:hover {
