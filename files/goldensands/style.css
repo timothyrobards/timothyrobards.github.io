@@ -162,10 +162,24 @@ body p {
 	padding-bottom: 1em;
 }
 
-.orig-sz {
+.orig-sz{
 	width:396px !important;
   	height:283px !important;
-  	text-align: center;
+}
+
+.orig-sz2{
+	width:396px !important;
+  	height:auto !important;
+}
+
+.carousel-logo {
+	text-align: center; 
+	padding-top: 30vh;
+}
+
+.carousel-logo2 {
+	text-align: center; 
+	padding-top: 30vh;
 }
 
 .thin {
