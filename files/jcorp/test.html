@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<button class="translate" id="en">English</button>
+<button class="translate" id="fr">French</button>
+
+<ul>
+  <li class="lang" key="HOME"></li>
+  <li class="lang" key="ABOUT"></li>
+  <li class="lang" key="CONTACT"></li>
+</ul>
+
+	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+	
+	var arrLang = {
+	  "en": {
+	    "HOME": "Home",
+	    "ABOUT": "About Us",
+	    "CONTACT": "Contact Us",
+	  },
+	  "fr": {
+	    "HOME": "baguette",
+	    "ABOUT": "baguette",
+	    "CONTACT": "baguette",
+	  }
+	};
+
+	// The default language is English
+	var lang = "en";
+	
+	// Check for localStorage support
+	if('localStorage' in window){
+   
+   		var usrLang = localStorage.getItem('uiLang');
+   		if(usrLang) {
+       		lang = usrLang
+   		}
+	}
+
+	console.log(lang);
+
+    $(document).ready(function() {
+
+    	$(".lang").each(function(index, element) {
+        	$(this).text(arrLang[lang][$(this).attr("key")]);
+         });
+    });
+
+    // get/set the selected language
+    $(".translate").click(function() {
+    	var lang = $(this).attr("id");
+
+        // update localStorage key
+        if('localStorage' in window) {
+            localStorage.setItem('uiLang', lang);
+            console.log( localStorage.getItem('uiLang') );
+        }
+
+        $(".lang").each(function(index, element) {
+        	$(this).text(arrLang[lang][$(this).attr("key")]);
+        });
+    });
+    
+</script>
+
+</body>
+</html>
