@@ -429,6 +429,30 @@ label {
 	width: inherit;
 }
 
+.itm img{
+	max-height: 300px; 
+}
+
+@media only screen and (max-width : 1024px) { 
+	.itm img {
+	  	max-height: 300px; 
+	  	max-width: 90vw;
+	}
+	div.noexpand.itm {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width : 414px) { 
+	.itm img {
+	  	max-height: 150px; 
+	  	max-width: 90vw;
+	}
+	div.noexpand.itm {
+		text-align: center;
+	}
+}
+
 .morephotos {
 	display: none;
 }
