@@ -279,6 +279,11 @@ body p {
 	padding-bottom: 0.5em !important;
 }
 
+.linkstyle a {
+	text-decoration: none !important;
+	color: inherit !important;
+}
+
 /* apply to cards only
 .btn {
 	border-radius: 0;
@@ -429,14 +434,35 @@ label {
 	width: inherit;
 }
 
+.itm {
+	text-align: center;
+}
+
 .itm img{
 	max-height: 300px; 
+}
+
+img#thumbo {
+	height: 250px !important;
+	width: auto;
+}
+
+.itm1 img{
+	padding-bottom: 2em;
+}
+
+.itm2 img{
+	padding-bottom: 2em;
 }
 
 @media only screen and (max-width : 1024px) { 
 	.itm img {
 	  	max-height: 300px; 
 	  	max-width: 90vw;
+	}
+	img#thumbo {
+		height: 250px !important;
+		width: auto;
 	}
 	div.noexpand.itm {
 		text-align: center;
@@ -447,6 +473,10 @@ label {
 	.itm img {
 	  	max-height: 150px; 
 	  	max-width: 90vw;
+	}
+	img#thumbo {
+		height: 250px !important;
+		width: auto;
 	}
 	div.noexpand.itm {
 		text-align: center;
@@ -588,12 +618,50 @@ label {
 /* ======================= IN THE MAKING ======================= */
 
 
-.inthemaking {	
+/*.inthemaking {	
 	background-image: url(assets/imgs/GoldenSands-ComingSoon.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 50% 45%;
 	height: 63vh;
+}*/
+
+#carousel-itm .carousel-inner .carousel-item img {
+	height: 70vh;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	object-position: 50% 30%;
+}
+
+#pic0 {
+	object-position: 50% 30% !important;
+}
+
+#pic1 {
+	object-position: 50% 20% !important;
+}
+
+#pic2 {
+	object-position: 50% 30% !important;
+}
+
+#pic3 {
+	object-position: 50% 40% !important;
+}
+
+#pic4 {
+	object-position: 50% 85% !important;
+}
+
+#carousel-itm {
+	position: absolute;
+	top: 0;
+	z-index: -100;
+	width: 100%;
+}
+
+.under-scroll {
+	margin-top: 63vh;
 }
 
 .inthemaking .navbar-nav a {
@@ -602,6 +670,51 @@ label {
 
 #comingsoon {
 	margin-bottom: 4em;
+}
+
+.carousel-caption {
+	color: #fff;
+	z-index: 1001;
+	text-align: right;
+}
+
+.carousel-caption img {
+	height: 100px !important;
+	width: auto !important;
+	margin-bottom: 1em;
+}
+
+.carousel-caption img#valleythumb {
+	height: 120px !important;
+	width: auto !important;
+	margin-bottom: 1em;
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px)  { 
+	.carousel-caption img {
+		height: 100px !important;
+		margin-bottom: 0em;
+		margin-right: 0.5em;
+	}
+
+	.carousel-caption img#valleythumb {
+		height: 120px !important;
+		margin-bottom: 0em;
+		margin-right: 0.5em;
+	}
+}
+
+@media only screen and (min-width : 375px) and (max-width : 667px) { 
+
+	.carousel-caption img {
+		height: 80px !important;
+		margin-bottom: 0em;
+	}
+
+	.carousel-caption img#valleythumb {
+		height: 100px !important;
+		margin-bottom: 0em;
+	}
 }
 
 
