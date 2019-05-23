@@ -672,8 +672,7 @@ img#thumbo {
 	margin-bottom: 4em;
 }
 
-.carousel-caption {
-	color: #fff;
+.carousel-caption#itm-caro {
 	z-index: 1001;
 	text-align: right;
 }
